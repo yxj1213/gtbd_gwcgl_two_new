@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_5"
+    android:paddingBottom="@dimen/dp_5"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/dp_6"
+        android:layout_height="@dimen/dp_6"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_17"
+        android:background="@drawable/gray_6_yuan" />
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/view"
+        android:id="@+id/lin_address"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/dp_26"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/work_item_txt_color"
+            android:textSize="@dimen/sp_14"
+            android:fontFamily="@string/PingFangSC_Regular"
+            />
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/PingFangSC_Regular"
+            android:textColor="@color/needcar_txt_color1"
+            android:textSize="@dimen/sp_12"/>
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/PingFangSC_Regular"
+            android:textColor="@color/needcar_txt_color1"
+            android:textSize="@dimen/sp_12" />
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/PingFangSC_Regular"
+            android:textColor="@color/needcar_txt_color1"
+            android:textSize="@dimen/sp_12"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_dk"
+        android:layout_toRightOf="@+id/lin_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_details_tjd1"
+        android:paddingTop="@dimen/dp_1"
+        android:paddingBottom="@dimen/dp_2"
+        android:paddingRight="@dimen/dp_8"
+        android:paddingLeft="@dimen/dp_8"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:fontFamily="@string/PingFangSC_Regular"
+        android:background="@drawable/border_blue_bg_14"
+        android:textColor="@color/app_main_colors"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:textSize="@dimen/sp_12"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rootRL"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <com.baidu.mapapi.map.TextureMapView
+            android:id="@+id/mapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/myPositionIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_10"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/icon_track_current"
+            />
+
+        <ImageView
+            android:id="@+id/carIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@+id/myPositionIV"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_5"
+            android:src="@mipmap/icon_track_car"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_panorama"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_full"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_margin="15dp"
+                    android:src="@mipmap/icon_full_screen" />
+            </FrameLayout>
+            <LinearLayout
+                android:id="@+id/lin_ditu"
+                android:orientation="vertical"
+                android:background="@color/alpha_30_black"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/tv_replace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:src="@mipmap/icon_replace"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white" />
+
+                <ImageView
+                    android:id="@+id/tv_land"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:src="@mipmap/icon_land"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white" />
+
+                <ImageView
+                    android:id="@+id/tv_jing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_10"
+                   android:src="@mipmap/icon_jing"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:gravity="right"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/zoomJiaTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textSize="28sp"
+                    android:textColor="@color/wheel_item_text_color_no_select"
+                    android:padding="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/wheel_item_text_color_no_select"/>
+
+                <TextView
+                    android:id="@+id/zoomJianTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textSize="28sp"
+                    android:textColor="@color/wheel_item_text_color_no_select"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_right_panel"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="车辆管理"
+                    android:textColor="@color/black_light"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_car_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_name"
+                    android:drawableRight="@mipmap/arraw_smal_down"
+                    android:drawablePadding="5dp"
+                    android:tag="-1"
+                    android:text="全部"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_car_expand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:tag="0"
+                    android:paddingBottom="15dp"
+                    android:src="@mipmap/car_manager_open" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_light" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/ll_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_all"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:tag="-1"
+                        android:text="全部"
+                        android:textColor="@color/black_light"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_online"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:tag="0"
+                        android:text="在线"
+                        android:textColor="@color/black_light"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_outline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:tag="4"
+                        android:text="离线"
+                        android:textColor="@color/black_light"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_drive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:tag="1"
+                        android:text="行驶"
+                        android:textColor="@color/black_light"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_task"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:tag="8"
+                        android:text="任务"
+                        android:textColor="@color/black_light"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/id_tree"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:divider="#aaa"
+                    android:dividerHeight="1px" />
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

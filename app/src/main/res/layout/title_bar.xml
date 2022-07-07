@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_45"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/title_bar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_back" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:maxEms="13"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/work_item_txt_color"
+        android:textSize="@dimen/sp_18"
+        android:textStyle="bold"
+        android:fontFamily="@string/PingFang_SC_Medium"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/title_bar_right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:text=""
+        android:textColor="@color/common_black"
+        android:textSize="@dimen/sp_13" />
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:scaleType="centerInside"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/text_grey_color"
+        android:visibility="gone"/>
+
+</RelativeLayout>

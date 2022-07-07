@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded,HardcodedText,RtlSymmetry,SmallSp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/img_before_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:padding="20dp"
+            android:src="@mipmap/arrow_left_nian"/>
+        <ImageView
+            android:id="@+id/img_before_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="20dp"
+            android:layout_toRightOf="@+id/img_before_year"
+            android:src="@mipmap/arrow_left_yue"/>
+        <TextView
+            android:id="@+id/this_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:text="2022年1月"/>
+        <ImageView
+            android:id="@+id/img_after_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_after_year"
+            android:src="@mipmap/arrow_right_yue"/>
+        <ImageView
+            android:id="@+id/img_after_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:padding="20dp"
+            android:src="@mipmap/arrow_right_nian"/>
+    </RelativeLayout>
+        <com.haibin.calendarview.CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:calendar_padding="10dp"
+            app:month_view="com.ttce.vehiclemanage.widget.calendar.SimpleMonthView"
+            app:calendar_height="30dp"
+            app:current_month_text_color="#333333"
+            app:day_text_size="14sp"
+            app:min_year="2004"
+            app:other_month_text_color="#e1e1e1"
+            app:selected_text_color="#fff"
+            app:selected_theme_color="@color/app_main_colors"
+            app:week_background="#fff"
+            app:week_text_color="#111"
+            app:week_view="com.ttce.vehiclemanage.widget.calendar.SimpleWeekView"/>
+</LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/register_tv_bg">
+
+            <TextView
+                android:id="@+id/tv_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="时间阙值："
+                android:textColor="@color/text_grey_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="35dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_one"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="小时"
+                android:textColor="@color/text_grey_color"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/register_tv_bg">
+
+            <TextView
+                android:id="@+id/tv_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:inputType="number"
+                android:text="缓冲值："
+                android:textColor="@color/text_grey_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_minute"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="35dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_two"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="分钟"
+                android:textColor="@color/text_grey_color"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/register_tv_bg">
+
+            <TextView
+                android:id="@+id/tv_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="操作口令："
+                android:textColor="@color/text_grey_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_command_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_three"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+        android:text="备注：当车辆设置疲劳驾驶对应数值后，系统检测到超出对应数值时，发出告警信息，如熄火状态未达到缓冲值时间，仍处于疲劳状态；解除方式，时间阙值和缓冲值设置为0并下发指令，系统无告警"
+        android:textColor="@color/text_grey_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_send_one"
+        android:layout_width="85dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/blue_round_tv_bg"
+        android:gravity="center"
+        android:text="发送"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

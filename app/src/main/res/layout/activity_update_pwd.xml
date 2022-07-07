@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="旧密码："
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_old_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/tv_one"
+            android:background="@color/transparent"
+            android:hint="请输入旧密码"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View style="@style/cuteline" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="新密码："
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_new_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/tv_two"
+            android:background="@color/transparent"
+            android:hint="请输入新密码"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View style="@style/cuteline" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="确认密码："
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_sure_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/tv_three"
+            android:background="@color/transparent"
+            android:hint="请再次输入密码"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+    <View style="@style/cuteline" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:text="请重新设置密码，长度为6-16位数字+字母组合(不能全是数字或字母)。为了您的账户安全，请勿设置为生日、手机号码、身份证等敏感信息!"
+        android:textColor="@color/red"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/blue_22_bg"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

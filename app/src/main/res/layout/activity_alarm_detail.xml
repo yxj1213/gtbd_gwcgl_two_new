@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/adsTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:background="@color/alpha_30_black"
+            android:padding="@dimen/dp_10"
+            android:text="暂无地址"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/myPositionIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_40"
+            android:src="@mipmap/icon_track_current"/>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_top"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/alpha_30_black"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_replace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:drawableTop="@mipmap/icon_replace"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/text_grey_color" />
+
+            <TextView
+                android:id="@+id/tv_land"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@mipmap/icon_land"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

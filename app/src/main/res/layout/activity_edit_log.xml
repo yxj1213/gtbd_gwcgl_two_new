@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/title_bar" />
+    <include layout="@layout/layout_search_top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/dismiss_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/ll_all"
+            android:layout_above="@+id/vierw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabBackground="@color/white"
+                app:tabIndicatorColor="@color/app_main_colors"
+                app:tabSelectedTextColor="@color/app_main_colors"
+                app:tabTextColor="@color/needcar_txt_color4" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/vierw"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_10"
+            android:layout_above="@+id/multSelectLL"
+            android:background="@color/bg_color"/>
+        <LinearLayout
+            android:id="@+id/multSelectLL"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_czrz"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="操作日志"
+                android:textColor="@drawable/blue_white_bg"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="20dp"
+                android:background="@color/text_grey_color" />
+
+            <TextView
+                android:id="@+id/tv_lxzl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="离线指令"
+                android:textColor="@drawable/blue_white_bg"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

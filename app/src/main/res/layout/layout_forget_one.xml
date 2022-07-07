@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/register_tv_bg">
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="手机号码："
+            android:textColor="@color/text_grey_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_phone"
+            android:background="@color/transparent"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/text_grey_color"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/register_tv_bg">
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="短信验证码："
+            android:textColor="@color/text_grey_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_yzm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_send"
+            android:layout_toRightOf="@+id/tv_message"
+            android:background="@color/transparent"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/text_grey_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="发送信息"
+            android:textColor="@color/main_text_color"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/lin_ysxy"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/rb_ysxy"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_yszc"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="阅读《隐私政策》"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/blue_22_bg"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

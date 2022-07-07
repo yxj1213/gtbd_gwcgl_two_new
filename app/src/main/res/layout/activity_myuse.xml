@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <RelativeLayout
+            android:id="@+id/rl_zlrz"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="指令日志"
+                android:drawableLeft="@mipmap/new_icon_zhiling"
+                android:drawablePadding="@dimen/dp_5"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/icon_right_grey" />
+
+        </RelativeLayout>
+
+        <View style="@style/view_top_bottom10" />
+
+        <RelativeLayout
+            android:id="@+id/rl_wlgl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="围栏管理"
+                android:drawableLeft="@mipmap/new_icon_weilans"
+                android:drawablePadding="@dimen/dp_5"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/icon_right_grey" />
+
+        </RelativeLayout>
+        <View style="@style/view_top_bottom10" />
+        <RelativeLayout
+            android:id="@+id/rl_sos"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="sos报警"
+                android:drawableLeft="@mipmap/new_icon_sos"
+                android:drawablePadding="@dimen/dp_5"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/icon_right_grey"/>
+
+        </RelativeLayout>
+
+
+        <View style="@style/view_top_bottom10" />
+        <RelativeLayout
+            android:id="@+id/rl_xxtz"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="消息通知"
+                android:drawableLeft="@mipmap/icon_messages"
+                android:drawablePadding="@dimen/dp_5"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <ImageView
+                android:id="@+id/img_zxzh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/icon_right_grey"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

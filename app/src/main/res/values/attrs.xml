@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NewSwitchButton">
+        <attr name="kswThumbDrawable" format="reference" />
+        <attr name="kswThumbColor" format="color|reference" />
+        <attr name="kswThumbMargin" format="dimension|reference" />
+        <attr name="kswThumbMarginTop" format="dimension|reference" />
+        <attr name="kswThumbMarginBottom" format="dimension|reference" />
+        <attr name="kswThumbMarginLeft" format="dimension|reference" />
+        <attr name="kswThumbMarginRight" format="dimension|reference" />
+        <attr name="kswThumbWidth" format="dimension|reference" />
+        <attr name="kswThumbHeight" format="dimension|reference" />
+        <attr name="kswThumbRadius" format="dimension|reference" />
+        <attr name="kswBackRadius" format="dimension|reference" />
+        <attr name="kswBackDrawable" format="reference" />
+        <attr name="kswBackColor" format="color|reference" />
+        <attr name="kswFadeBack" format="boolean" />
+        <attr name="kswBackMeasureRatio" format="float" />
+        <attr name="kswAnimationDuration" format="integer" />
+        <attr name="kswTintColor" format="color|reference" />
+        <attr name="kswTextOn" format="string" />
+        <attr name="kswTextOff" format="string" />
+        <attr name="kswTextMarginH" format="dimension" />
+        <attr name="kswAutoAdjustTextPosition" format="boolean" />
+    </declare-styleable>
+    <!--自定义属性 -->
+    <declare-styleable name="ClipViewLayout">
+        <attr name="clipType" format="enum">
+            <enum name="circle" value="1" />
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="mHorizontalPadding" format="dimension" />
+        <attr name="clipBorderWidth" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="XlHRatingBar">
+        <attr name="numStars" format="integer" /><!--总的星星数-->
+        <attr name="rating" format="float" /><!--当前已选中的星星个数-->
+        <attr name="ratingViewClass" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MyRoundLayout">
+        <attr name="roundradius" format="dimension" />
+        <attr name="topLeftRadius" format="dimension" />
+        <attr name="topRightRadius" format="dimension" />
+        <attr name="bottomLeftRadius" format="dimension" />
+        <attr name="bottomRightRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeItemLayout">
+        <attr name="layout_itemType">
+            <flag name="main" value="0x01"/>
+            <flag name="menu" value="0x02"/>
+        </attr>
+    </declare-styleable>
+
+
+    <style name="Bubble.TextAppearance.Dark" parent="android:TextAppearance.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="Bubble.TextAppearance.Light" parent="Bubble.TextAppearance.Dark">
+        <item name="android:textColor">#ffeeeeee</item>
+    </style>
+    <style name="ClusterIcon.TextAppearance" parent="android:TextAppearance">
+        <item name="android:textColor">#ffeeeeee</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <declare-styleable name="RangeSeekBar">
+        <!--RangeSeekBar common attrs-->
+
+        <!--The maximum-->
+        <attr name="rsb_max" format="float"/>
+
+        <!--The minimum-->
+        <attr name="rsb_min" format="float"/>
+
+        <!--RangeSeekBar mode, single is normal seekBar, range is RangeSeekBar-->
+        <attr name="rsb_mode" format="enum">
+            <enum name="single" value="1"/>
+            <enum name="range" value="2"/>
+        </attr>
+
+        <!--RangeSeekBar gravity-->
+        <attr name="rsb_gravity" format="enum">
+            <enum name="top" value="0"/>
+            <enum name="bottom" value="1"/>
+            <enum name="center" value="2"/>
+        </attr>
+
+        <!--The min interval of the thumbs -->
+        <attr name="rsb_min_interval" format="float"/>
+
+        <!-- 0 for the normal mode, greater than 1 to switch to scale mode-->
+        <attr name="rsb_tick_mark_number" format="integer"/>
+
+        <!--Scale mode
+        Number according to the scale of the actual proportion of the distribution of the location (markTextArray must be a number)
+        Other bisects the current layout (markTextArray can be any character)
+        -->
+        <attr name="rsb_tick_mark_mode" format="enum">
+            <enum name="number" value="0"/>
+            <enum name="other" value="1"/>
+        </attr>
+
+        <!--The tick mark text gravity -->
+        <attr name="rsb_tick_mark_gravity" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+
+        <!--The tick mark text layout gravity -->
+        <attr name="rsb_tick_mark_layout_gravity" format="enum">
+            <enum name="top" value="0"/>
+            <enum name="bottom" value="1"/>
+        </attr>
+
+        <!--The tick mark text array -->
+        <attr name="rsb_tick_mark_text_array" format="reference"/>
+
+        <!--The tick mark text margin bottom to progress -->
+        <attr name="rsb_tick_mark_text_margin" format="dimension" />
+
+        <attr name="rsb_tick_mark_text_size" format="dimension" />
+
+        <attr name="rsb_tick_mark_text_color" format="color" />
+
+        <!--it just work in range && number mode now-->
+        <attr name="rsb_tick_mark_in_range_text_color" format="color" />
+
+        <attr name="rsb_progress_height" format="dimension"/>
+
+        <attr name="rsb_progress_radius" format="dimension"/>
+
+        <!--the color of progress bar when in progress-->
+        <attr name="rsb_progress_color" format="color"/>
+        <!--the default color of the progress bar-->
+        <attr name="rsb_progress_default_color" format="color"/>
+
+        <attr name="rsb_progress_drawable" format="reference"/>
+
+        <attr name="rsb_progress_drawable_default" format="reference"/>
+
+        <!--SeekBar attrs-->
+        <attr name="rsb_indicator_show_mode" format="enum">
+            <enum name="showWhenTouch" value="0"/>
+            <enum name="alwaysHide" value="1"/>
+            <enum name="alwaysShowAfterTouch" value="2"/>
+            <enum name="alwaysShow" value="3"/>
+        </attr>
+        <attr name="rsb_indicator_height" format="dimension" >
+            <enum name="wrap_content" value="-1" />
+        </attr>
+        <attr name="rsb_indicator_width" format="dimension" >
+            <enum name="wrap_content" value="-1" />
+        </attr>
+        <!--indicator margin bottom to progress bar-->
+        <attr name="rsb_indicator_margin" format="dimension" />
+        <attr name="rsb_indicator_text_size" format="dimension" />
+        <attr name="rsb_indicator_text_color" format="color" />
+        <!--indicator arrow size, it just work when you not use rsb_indicator_drawable -->
+        <attr name="rsb_indicator_arrow_size" format="dimension" />
+        <!-- must use 9 path ！！！-->
+        <attr name="rsb_indicator_drawable" format="reference"/>
+        <attr name="rsb_indicator_background_color" format="color" />
+        <attr name="rsb_indicator_padding_left" format="dimension" />
+        <attr name="rsb_indicator_padding_right" format="dimension" />
+        <attr name="rsb_indicator_padding_top" format="dimension" />
+        <attr name="rsb_indicator_padding_bottom" format="dimension" />
+        <attr name="rsb_indicator_radius" format="dimension" />
+        <attr name="rsb_thumb_drawable" format="reference"/>
+        <!--the thumb inactivated is when you don't touch the thumb button-->
+        <attr name="rsb_thumb_inactivated_drawable" format="reference"/>
+        <attr name="rsb_thumb_width" format="dimension"/>
+        <attr name="rsb_thumb_height" format="dimension"/>
+        <attr name="rsb_thumb_scale_ratio" format="float"/>
+
+        <!--steps SeekBar-->
+        <attr name="rsb_steps" format="integer"/>
+        <attr name="rsb_step_color" format="color"/>
+        <attr name="rsb_step_width" format="dimension"/>
+        <attr name="rsb_step_height" format="dimension"/>
+        <attr name="rsb_step_radius" format="dimension"/>
+        <attr name="rsb_step_auto_bonding" format="boolean"/>
+        <attr name="rsb_step_drawable" format="reference"/>
+
+    </declare-styleable>
+
+
+    <!--阴影布局 -->
+    <declare-styleable name="ShadowLayout">
+        <!-- 阴影颜色-->
+        <attr name="shadowColor" format="color"/>
+        <!-- 圆角大小，默认无圆角0-->
+        <attr name="shadowRadius" format="dimension"/>
+        <!-- 模糊半径 -->
+        <attr name="blurRadius" format="dimension" />
+        <!-- 是否有点击效果-->
+        <attr name="hasEffect" format="boolean"/>
+        <attr name="bgColor" format="color"/>
+        <!-- 水平位移-->
+        <attr name="xOffset" format="dimension"/>
+        <!--竖直位移 -->
+        <attr name="yOffset" format="dimension"/>
+
+    </declare-styleable>
+    <declare-styleable name="NewShadowLayout">
+        <!--阴影的圆角大小-->
+        <attr name="yc_cornerRadius" format="dimension" />
+        <!--阴影的扩散范围(也可以理解为扩散程度)-->
+        <attr name="yc_shadowLimit" format="dimension" />
+        <!--阴影颜色-->
+        <attr name="yc_shadowColor" format="color" />
+        <!--x轴的偏移量-->
+        <attr name="yc_dx" format="dimension" />
+        <!--y轴的偏移量-->
+        <attr name="yc_dy" format="dimension" />
+        <!--左边是否显示阴影-->
+        <attr name="yc_leftShow" format="boolean" />
+        <!--右边是否显示阴影-->
+        <attr name="yc_rightShow" format="boolean" />
+        <!--上边是否显示阴影-->
+        <attr name="yc_topShow" format="boolean" />
+        <!--下面是否显示阴影-->
+        <attr name="yc_bottomShow" format="boolean" />
+        <attr name="yc_bgColor" format="color"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="RequiredTextView">
+        <attr name="android:text" />
+        <attr name="prefix" format="string|reference" />
+        <attr name="prefix_color" format="color|reference" />
+    </declare-styleable>
+</resources>

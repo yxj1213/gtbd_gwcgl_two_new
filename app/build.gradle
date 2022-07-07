@@ -1,0 +1,280 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.mob.sdk'
+//apply plugin: 'com.jakewharton.butterknife'
+
+MobSDK {
+    appKey "304fa111e2234"
+    appSecret "b5f247d42f4e51e5a236612e080ab1a8"
+    // 调用MobPush
+//    MobPush {}
+    ShareSDK {
+        loopShare false
+        devInfo {
+            Wechat {
+                appId "wxeb5a22b471433d43"
+                appSecret "129b7312f190693e86456c0f65a34b1f"
+//                userName "gh_afb25ac019c9"
+//                path "pages/index/index.html?id=1"
+//                withShareTicket true
+//                miniprogramType 2
+            }
+            QQ {
+                appId "101837413"
+                appKey "47deb7ef8d972290694be833bf734155"
+            }
+//            WechatMoments {
+//                appId "wxeb5a22b471433d43"
+//                appSecret "129b7312f190693e86456c0f65a34b1f"
+//            }
+//            WechatFavorite {
+//                appId "wxeb5a22b471433d43"
+//                appSecret "129b7312f190693e86456c0f65a34b1f"
+//            }
+//            QZone {
+//                appId "101837413"
+//                appKey "47deb7ef8d972290694be833bf734155"
+//            }
+        }
+    }
+}
+
+//MobSDK {
+//    appKey "m30571ec64eae0"
+//    appSecret "1b3355fb747b2adf23070ebfd7fca217"
+//    ShareSDK {
+//        loopShare false
+//        devInfo {
+//            Wechat {
+//                appId "wxeb5a22b471433d43"
+//                appSecret "129b7312f190693e86456c0f65a34b1f"
+////                userName "gh_afb25ac019c9"
+////                path "pages/index/index.html?id=1"
+////                withShareTicket true
+////                miniprogramType 2
+//            }
+//            QQ {
+//                appId "101841032"
+//                appKey "47deb7ef8d972290694be833bf734155"
+//            }
+//            WechatMoments {
+//                appId "wxeb5a22b471433d43"
+//                appSecret "129b7312f190693e86456c0f65a34b1f"
+//            }
+////            WechatFavorite {
+////                appId "wxeb5a22b471433d43"
+////                appSecret "129b7312f190693e86456c0f65a34b1f"
+////            }
+//            QZone {
+//                appId "101841032"
+//                appKey "47deb7ef8d972290694be833bf734155"
+//            }
+//        }
+//    }
+//}
+
+
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    compileSdkVersion 29
+//    buildToolsVersion "28.0.3"
+    buildToolsVersion "30.0.2"
+
+    // apache包
+    useLibrary 'org.apache.http.legacy'
+
+    signingConfigs {
+        releaseConfig {
+            keyAlias 'key0'
+            keyPassword 'ttcejsxh'
+            storeFile file('key/ttcevehiclemanage.jks')
+            storePassword 'ttcejsxh'
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.ttce.vehiclemanage"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 22
+        versionName "3.1.2"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        multiDexEnabled true
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters "arm64-v8a","armeabi-v7a"
+
+        }
+    }
+
+    flavorDimensions "user"
+    productFlavors {
+        kacheriji {
+            dimension 'user'
+            applicationId "com.ttce.vehiclemanage"
+            manifestPlaceholders.put("baidu_key", "spGlA1MSa5XSUizKoctCDW4WD3dhSKfl")
+            buildConfigField 'String', 'CHANNEL', '"huaweiyun"'
+            buildConfigField 'String', 'APP_ID', '"18314716"'
+            buildConfigField 'String', 'APP_SECRECT', '"2B:90:B9:08:16:BA:0B:25:04:1A:3B:D5:EA:BB:33:65:F0:BD:62:81;com.ttce.vehiclemanage"'
+            resValue "string", "app_name", "公务车管理"
+        }
+        zhongyang {
+            dimension 'user'
+            applicationId "com.ttce.vehiclemanagezy"
+            manifestPlaceholders.put("baidu_key", "r1InkGRu3Y4anWYtjdEmWMV2KeTSQA4x")
+            buildConfigField 'String', 'CHANNEL', '"zhongyang"'
+            buildConfigField 'String', 'APP_ID', '"21672264"'
+            buildConfigField 'String', 'APP_SECRECT', '"2B:90:B9:08:16:BA:0B:25:04:1A:3B:D5:EA:BB:33:65:F0:BD:62:81;com.ttce.vehiclemanagezy"'
+            resValue "string", "app_name", "中阳公务车"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //混淆
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            signingConfig signingConfigs.releaseConfig
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            minifyEnabled true
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.releaseConfig
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                def fileName = outputFile.name.replace(".apk", "_${defaultConfig.versionName}.apk")
+                outputFileName = fileName
+            }
+        }
+    }
+
+    //设置虚拟机堆内存空间大小，避免在编译期间OOM
+//    dexOptions {
+//        incremental true
+//        javaMaxHeapSize "4g"
+//    }
+    //打包不检查
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError true
+    }
+
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    configurations {
+        cleanedAnnotations
+        compile.exclude group: 'org.jetbrains' , module:'annotations'
+    }
+
+
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
+
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+//    implementation 'com.jakewharton:butterknife:10.2.3'
+//    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+    implementation 'com.jakewharton:butterknife:7.0.1'
+
+    annotationProcessor 'com.jakewharton:butterknife:7.0.1'
+
+    api 'androidx.multidex:multidex:2.0.0'
+
+    //图片选择
+    implementation project(':library:irecyclerview')
+    //万能适配器和recyclerview
+    //datetimepicker
+    implementation project(':library:datetimepicker')
+    //common
+    implementation project(':library:common')
+    implementation project(':library:keyboard')
+    implementation 'com.afollestad.material-dialogs:core:0.9.4.3'
+    implementation 'com.afollestad.material-dialogs:commons:0.9.4.3'
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.47'
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'
+    api 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.tencent.bugly:crashreport:latest.release'
+    implementation 'com.tencent.bugly:nativecrashreport:latest.release'
+    implementation 'com.yanzhenjie.permission:support:2.0.1'
+    implementation 'com.google.android:flexbox:1.0.0'
+
+
+    //圆角通用按钮
+    implementation 'com.lai:buttonStyle:1.0.2'
+    //圆形头像
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation(name: 'BaiduPanoSDK', ext: 'aar')
+    // 支付宝 SDK AAR 包所需的配置
+    api 'com.alipay.sdk:alipaysdk-android:+@aar'
+    implementation(name: 'wechat-sdk-android-without-mta-6.8.0', ext: 'aar')
+    implementation 'com.azhon:appupdate:2.9.0'
+
+//    //基础组件库依赖(必须) Push 6.2.0版本必须升级新版本Common SDK
+//    implementation 'com.umeng.umsdk:common:9.3.0'
+//    implementation 'com.umeng.umsdk:push:6.2.0'
+////    implementation 'com.umeng.umsdk:utdid:1.5.2'
+//    implementation 'com.umeng.umsdk:asms:1.1.3'
+//    implementation 'com.umeng.umsdk:crash:0.0.5'
+//
+////友盟push相关依赖(必须)
+//
+//    implementation 'com.umeng.umsdk:alicloud-httpdns:1.2.5'
+//    implementation 'com.umeng.umsdk:alicloud-utils:1.1.5'
+//    implementation 'com.umeng.umsdk:alicloud_beacon:1.0.1'
+//
+//    implementation 'com.umeng.umsdk:agoo-accs:3.3.9.7-open'
+//    implementation 'com.umeng.umsdk:agoo_networksdk:3.5.5'
+//    implementation 'com.umeng.umsdk:agoo_tlog:3.0.0.17'
+//    implementation 'com.umeng.umsdk:agoo_tnet4android:3.1.14.9'
+
+
+//    compile 'com.yuyh.imgsel:library:2.1.0'
+    implementation 'top.zibin:Luban:1.1.8'
+    compile 'com.contrarywind:Android-PickerView:4.1.9'
+    implementation 'com.haibin:calendarview:3.6.8'
+
+    compile 'com.github.Othershe:CornerLabelView:1.0.0'
+    compile 'com.youth.banner:banner:1.4.10'  //最新版本
+
+    compile 'com.jph.takephoto:takephoto_library:4.0.3'
+    implementation 'com.github.gzu-liyujiang.AndroidPicker:WheelPicker:4.1.7'
+
+}

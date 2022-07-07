@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/title_bar" android:id="@+id/title" />
+    <com.baidu.mapapi.map.MapView
+        android:layout_below="@+id/title"
+        android:id="@+id/mapview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/dp_200">
+    </com.baidu.mapapi.map.MapView>
+
+    <com.aspsine.irecyclerview.IRecyclerView
+        android:id="@+id/poi_list"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/dp_200">
+    </com.aspsine.irecyclerview.IRecyclerView>
+
+</RelativeLayout>

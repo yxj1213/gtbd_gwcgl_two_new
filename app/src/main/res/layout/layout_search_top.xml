@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_search"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:background="@drawable/white_yy">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:visibility="invisible"
+            android:src="@mipmap/arrow_left" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_left"
+            android:background="@color/text_grey_color" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv_search"
+            android:layout_toRightOf="@+id/view"
+            android:background="@color/transparent"
+            android:hint="请输入IMEI后五位或下发人"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="搜索"
+            android:textColor="@color/text_grey_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

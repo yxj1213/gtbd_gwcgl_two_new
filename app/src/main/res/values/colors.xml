@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0495DC</color>
+    <color name="colorPrimaryDark">#0495DC</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="app_main_colors">#1196EF</color>
+    <color name="main_text_color">#0495e0</color>
+    <color name="blue_color1">#56bcf3</color>
+    <color name="common_black">#1f1f1f</color>
+    <color name="text_grey_color">#999999</color>
+
+    <color name="car_status_online">#2AC52A</color>
+    <color name="car_status_outline">#999999</color>
+    <color name="car_status_drive">#4EA9F9</color>
+    <color name="car_status_exception">#8460A9</color>
+    <color name="car_status_ungps">#FDA11C</color>
+    <color name="car_status_sos">#FB6460</color>
+    <color name="color_my_item">#eeeeee</color>
+
+    <color name="map_overlay">#60A6C2DE</color>
+    <color name="map_overlay_stroke">#9196B4</color>
+
+
+
+    <color name="work_item_txt_color">#272727</color>
+    <color name="bg_color">#F3F4F5</color>
+    <color name="main_unsel_txt_color">#333333</color>
+    <color name="gift_bg_color">#0D3A62</color>
+    <color name="needcar_bg_color1">#F5F6F7</color>
+    <color name="needcarimg_bg_color1">#F0F0F0</color>
+    <color name="needcar_txt_color1">#888888</color>
+    <color name="needcar_txt_color2">#272727</color>
+    <color name="needcar_txt_color3">#0B98EC</color>
+    <color name="needcar_txt_color4">#555555</color>
+    <color name="color_33">#335e6061</color>
+    <color name="view_bg">#E4E4E4</color>
+    <color name="gray_bg">#CCCCCC</color>
+    <color name="gray_bg_qx">#6C7279</color>
+    <color name="blue">#08C7A7</color>
+    <color name="orange">#FF7D59</color>
+    <color name="hint_txt_color">#A5A5A5</color>
+    <color name="gray_color">#DCDFE1</color>
+    <color name="white2_color">#EDF8FF</color>
+    <color name="dialog_color">#4D84FE</color>
+    <color name="e6_color">#E6E6E6</color>
+    <color name="b0_color">#B0B0B0</color>
+    <color name="e0_color">#E0F3FF</color>
+    <color name="e0_color2">#E0FDF3</color>
+    <color name="ff_color2">#FFEBEB</color>
+    <color name="f5_color">#FF5A5A</color>
+    <color name="aa_color">#AAB9D3</color>
+    <color name="c1_color">#15314D</color>
+    <color name="main_left_bg_color">#04213D</color>
+    <color name="fa_color">#FAFBFC</color>
+    <color name="black_color">#171717</color>
+    <color name="a1a1_color">#1AA1FA</color>
+    <color name="e5_color">#265e6061</color>
+    <color name="a1_color">#1a4c4f51</color>
+    <color name="d3_color">#3dabb1b8</color>
+    <color name="e5e5_color">#E5E5E5</color>
+    <color name="a15e_color">#1a5e6061</color>
+    <color name="e6145_color">#145e6061</color>
+    <color name="a6166_color">#6616a7fb</color>
+    <color name="fff2">#fff2faff</color>
+    <color name="e67">#052e67</color>
+    <color name="bc4">#849bc4</color>
+    <color name="d9f">#233F5B</color>
+    <color name="main_50">#012250</color>
+    <color name="d6e1">#d6e1f3</color>
+    <color name="color_24">#242424</color>
+    <color name="color_66">#666666</color>
+    <color name="color_eaf2fd">#EAF2FD</color>
+    <color name="color_a5">#a5a5a5</color>
+    <color name="color_fb">#fffb3838</color>
+    <color name="color_96">#1a969a9e</color>
+    <color name="color_b8">#b8b8b8</color>
+    <color name="color_f8">#f6f7f8</color>
+
+
+    <color name="color_d4">#D4DBE2</color>
+
+
+    <color name="color_d8f2">#D8F2FF</color>
+
+
+    <color name="color_ca">#11caff</color>
+    <color name="color_7">#777777</color>
+    <color name="color_68">#686a6b</color>
+    <color name="color_98">#989a9c</color>
+    <color name="color_0bc">#0BC9A8</color>
+
+    <color name="color_00">#000000</color>
+    <color name="color_10">#1090E5</color>
+    <color name="color_f0">#858E98</color>
+    <color name="color_93">#93D1FB</color>
+    <color name="color_bb">#BBBBBB</color>
+    <color name="color_6A">#6A6A6B</color>
+
+    <color name="color_1c">#1C1E20</color>
+    <color name="color_1c1e">#1c1e20</color>
+    <color name="color_99">#999DA1</color>
+    <color name="color_5b">#5B5E62</color>
+    <color name="color_018">#018CED</color>
+
+
+    <color name="white">#ffffff</color>
+
+    <color name="black">#000000</color> <!--黑-->
+
+    <color name="black_light">#363636</color> <!--黑-->
+
+    <color name="gray">#dcdcdc</color>
+</resources>

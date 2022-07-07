@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:background="@color/blue_color1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_head"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_instruct_one"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/instruct_tv_sel"
+                android:drawableLeft="@mipmap/instruct_one_grey"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:text="疲劳驾驶"
+                android:textColor="@drawable/instruct_tvcolor_sel"
+                android:textSize="15sp" />
+
+            <View style="@style/cuteline" />
+
+            <TextView
+                android:id="@+id/tv_instruct_two"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/instruct_tv_sel"
+                android:drawableLeft="@mipmap/instruct_two_grey"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:text="断电报警"
+                android:textColor="@drawable/instruct_tvcolor_sel"
+                android:textSize="15sp" />
+
+            <View style="@style/cuteline" />
+
+            <TextView
+                android:id="@+id/tv_instruct_three"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/instruct_tv_sel"
+                android:drawableLeft="@mipmap/instruct_three_grey"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:text="ACC设防"
+                android:textColor="@drawable/instruct_tvcolor_sel"
+                android:textSize="15sp" />
+
+            <View style="@style/cuteline" />
+
+            <TextView
+                android:id="@+id/tv_instruct_four"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/instruct_tv_sel"
+                android:drawableLeft="@mipmap/instruct_four_grey"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:text="位移报警"
+                android:textColor="@drawable/instruct_tvcolor_sel"
+                android:textSize="15sp" />
+
+            <View style="@style/cuteline" />
+
+            <TextView
+                android:id="@+id/tv_instruct_five"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/instruct_tv_sel"
+                android:drawableLeft="@mipmap/instruct_grey_five"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:text="低电提醒"
+                android:textColor="@drawable/instruct_tvcolor_sel"
+                android:textSize="15sp" />
+
+            <View style="@style/cuteline" />
+
+            <TextView
+                android:id="@+id/tv_instruct_six"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/instruct_tv_sel"
+                android:drawableLeft="@mipmap/instruct_six_grey"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:text="超速报警"
+                android:textColor="@drawable/instruct_tvcolor_sel"
+                android:textSize="15sp" />
+
+            <View style="@style/cuteline" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/ll_instruct_one"
+                layout="@layout/layout_instruct_one" />
+
+            <include
+                android:id="@+id/ll_instruct_two"
+                layout="@layout/layout_instruct_two" />
+
+            <include
+                android:id="@+id/ll_instruct_three"
+                layout="@layout/layout_instruct_three" />
+
+            <include
+                android:id="@+id/ll_instruct_four"
+                layout="@layout/layout_instruct_four" />
+
+            <include
+                android:id="@+id/ll_instruct_five"
+                layout="@layout/layout_instruct_five" />
+
+            <include
+                android:id="@+id/ll_instruct_six"
+                layout="@layout/layout_instruct_six" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

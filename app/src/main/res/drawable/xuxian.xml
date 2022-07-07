@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape>
+            <solid android:color="@color/fff2" />
+            <corners android:radius="@dimen/dp_10" />
+        </shape>
+    </item>
+    <item
+       >
+        <shape>
+            <stroke
+                android:dashGap="@dimen/dp_2"
+                android:dashWidth="@dimen/dp_2"
+                android:width="@dimen/dp_1"
+                android:color="@color/app_main_colors" />
+
+            <solid android:color="@color/fff2" />
+            <corners android:radius="@dimen/dp_10" />
+        </shape>
+    </item>
+
+</layer-list>

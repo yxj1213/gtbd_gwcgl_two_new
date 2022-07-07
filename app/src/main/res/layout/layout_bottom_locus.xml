@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ttce.vehiclemanage.widget.MyLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/control_panel_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10">
+        <include layout="@layout/dialog_calendar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+               <TextView
+                android:id="@+id/tv_last_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="昨天"
+                android:textColor="@color/wheel_item_text_color_no_select"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_last_weeek"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="上周"
+                android:textColor="@color/wheel_item_text_color_no_select"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/tv_last_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="上月"
+                android:textColor="@color/wheel_item_text_color_no_select"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_Last_3_days"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="最近三天"
+                android:textColor="@color/wheel_item_text_color_no_select"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+            <TextView
+                android:id="@+id/tv_today"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="今天"
+                android:textColor="@color/wheel_item_text_color_no_select"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/tv_this_weeek"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="本周"
+                android:textColor="@color/wheel_item_text_color_no_select"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_this_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="本月"
+                android:textColor="@color/wheel_item_text_color_no_select"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_Last_7_days"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="最近七天"
+                android:textColor="@color/wheel_item_text_color_no_select"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="开始时间："
+                android:textColor="@color/wheel_item_text_color_no_select"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="请选择"
+                android:textColor="@color/common_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_10"
+                android:text=">"
+                android:textColor="@color/common_black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="结束时间："
+                android:textColor="@color/wheel_item_text_color_no_select"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_end_time"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:text="请选择"
+                android:textColor="@color/common_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_10"
+                android:text=">"
+                android:textColor="@color/common_black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="车牌号码："
+                android:textColor="@color/wheel_item_text_color_no_select"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_device_number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:gravity="left"
+                android:text="请选择"
+                android:textColor="@color/common_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_10"
+                android:text=">"
+                android:textColor="@color/common_black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_20">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/whitebg_grayborder30_round_tv_bg"
+                android:layout_marginRight="@dimen/dp_20"
+                android:paddingLeft="30dp"
+                android:paddingTop="5dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="5dp"
+                android:text="取消"
+                android:textColor="#56dff3"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue30_round_tv_bg"
+                android:paddingLeft="30dp"
+                android:paddingTop="5dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:text="确认"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.ttce.vehiclemanage.widget.MyLayout>

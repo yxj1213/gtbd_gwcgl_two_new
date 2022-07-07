@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gtbd_wlpt.iml" filepath="$PROJECT_DIR$/.idea/modules/gtbd_wlpt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/gtbd_wlpt.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/gtbd_wlpt.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/gtbd_wlpt.library.iml" filepath="$PROJECT_DIR$/.idea/modules/library/gtbd_wlpt.library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/common/gtbd_wlpt.library.common.iml" filepath="$PROJECT_DIR$/.idea/modules/library/common/gtbd_wlpt.library.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/datetimepicker/gtbd_wlpt.library.datetimepicker.iml" filepath="$PROJECT_DIR$/.idea/modules/library/datetimepicker/gtbd_wlpt.library.datetimepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/irecyclerview/gtbd_wlpt.library.irecyclerview.iml" filepath="$PROJECT_DIR$/.idea/modules/library/irecyclerview/gtbd_wlpt.library.irecyclerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/keyboard/gtbd_wlpt.library.keyboard.iml" filepath="$PROJECT_DIR$/.idea/modules/library/keyboard/gtbd_wlpt.library.keyboard.iml" />
+    </modules>
+  </component>
+</project>

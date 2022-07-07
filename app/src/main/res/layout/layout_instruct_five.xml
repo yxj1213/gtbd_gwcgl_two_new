@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/register_tv_bg">
+
+            <TextView
+                android:id="@+id/tv_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="电压阙值："
+                android:textColor="@color/text_grey_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_voltage_five"
+                android:layout_width="match_parent"
+                android:layout_marginRight="30dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_one"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="V"
+                android:textColor="@color/text_grey_color"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/register_tv_bg">
+
+            <TextView
+                android:id="@+id/tv_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="操作口令："
+                android:textColor="@color/text_grey_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_command_five"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_three"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+        android:text="备注：当车辆设置低电提醒时，系统检测到车辆上传的电压值低于设定电压阙值时，提示低电提醒。"
+        android:textColor="@color/text_grey_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_send_five"
+        android:layout_width="85dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/blue_round_tv_bg"
+        android:gravity="center"
+        android:text="发送"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

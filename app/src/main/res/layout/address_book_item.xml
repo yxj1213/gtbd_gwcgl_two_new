@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/needcar_bg_color1"
+    android:orientation="vertical">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:paddingLeft="@dimen/dp_14"
+       android:paddingRight="@dimen/dp_14"
+       android:layout_marginLeft="@dimen/dp_6"
+       android:layout_marginRight="@dimen/dp_6"
+       android:layout_marginBottom="@dimen/dp_10"
+       android:background="@drawable/white_12_bg"
+       android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/dp_16"
+    android:paddingBottom="@dimen/dp_16"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_gray_dw"
+        android:layout_marginRight="@dimen/dp_11"
+        android:layout_centerVertical="true"/>
+    <LinearLayout
+       android:layout_toRightOf="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_address1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/needcar2_tjd_txt1"
+                android:textColor="@color/work_item_txt_color"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_16"
+                android:fontFamily="@string/PingFang_SC_Medium"
+                />
+            <TextView
+                android:id="@+id/tv_mr"
+                android:layout_toRightOf="@+id/txt_address1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_route_txt2"
+                android:textColor="@color/app_main_colors"
+                android:textSize="@dimen/sp_11"
+                android:paddingLeft="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4"
+                android:layout_centerVertical="true"
+                android:background="@drawable/blue_bg_4"
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/txt_address2"
+            android:layout_width="135dp"
+            android:fontFamily="@string/PingFangSC_Regular"
+            android:layout_height="17dp"
+            android:text="@string/ditu1"
+            android:textColor="@color/needcar_txt_color1"
+            android:layout_marginTop="@dimen/dp_1"
+            android:textSize="@dimen/sp_12"
+            />
+    </LinearLayout>
+</RelativeLayout>
+
+<include layout="@layout/edit_del"
+    android:visibility="gone"/>
+</LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/address_book_txt1"
+        android:paddingTop="@dimen/dp_8"
+        android:paddingBottom="@dimen/dp_8"
+        android:drawableLeft="@mipmap/icon_search"
+        android:drawablePadding="@dimen/dp_6"
+        android:textColor="@color/needcar_txt_color1"
+        android:background="@drawable/gray_6_bg"
+        android:textSize="@dimen/sp_14"
+        android:fontFamily="@string/PingFangSC_Regular"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_10"
+        />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/needcar_bg_color1"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rel_top"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address_book_txt2"
+            android:textColor="@color/needcar_txt_color4"
+            android:textSize="@dimen/sp_14"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:fontFamily="@string/PingFang_SC_Medium"
+            />
+        <TextView
+            android:id="@+id/tv_gl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address_book_txt3"
+            android:layout_alignParentRight="true"
+            android:paddingTop="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingBottom="@dimen/dp_10"
+            android:fontFamily="@string/PingFangSC_Regular"
+            android:textColor="@color/app_main_colors"
+            android:textSize="@dimen/sp_14"
+            />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_below="@+id/rel_top"
+        android:layout_above="@+id/tv_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <com.aspsine.irecyclerview.IRecyclerView
+            android:id="@+id/irc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:loadMoreFooterLayout="@layout/irecyclerview_loadmore"
+            app:loadMoreEnabled="true"
+            app:refreshEnabled="true"
+            app:refreshHeaderLayout="@layout/irecyclerview_refresh_header" />
+
+        <com.jaydenxiao.common.commonwidget.LoadingTip
+            android:id="@+id/loadedTip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center" />
+    </FrameLayout>
+
+
+    <include layout="@layout/activity_order_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
+
+</LinearLayout>

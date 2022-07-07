@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_open_six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开启" />
+
+                <RadioButton
+                    android:id="@+id/rb_close_six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关闭" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/register_tv_bg">
+
+                    <TextView
+                        android:id="@+id/tv_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="持续时间："
+                        android:textColor="@color/text_grey_color"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_time_six"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_one"
+                        android:background="@color/transparent"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="12dp"
+                android:text="时间范围：5-600秒  默认值：20秒"
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/register_tv_bg">
+
+                    <TextView
+                        android:id="@+id/tv_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="超速速度："
+                        android:textColor="@color/text_grey_color"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_speed_six"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_three"
+                        android:background="@color/transparent"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="12dp"
+                android:text="超速门限范围：20-255km/h  默认值：100km/mm"
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/register_tv_bg">
+
+                    <TextView
+                        android:id="@+id/tv_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="操作口令："
+                        android:textColor="@color/text_grey_color"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_command_six"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_four"
+                        android:background="@color/transparent"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="12dp"
+                android:text="备注：当车辆设置开启超速告警后，车辆行驶速度大于设定的限速值且持续时间间隔大于设定值后产生超速报警行驶速度低于限速值后清除超速报警；设置关闭超速报警后，系统无告警提示。"
+                android:textColor="@color/text_grey_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_send_six"
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/blue_round_tv_bg"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

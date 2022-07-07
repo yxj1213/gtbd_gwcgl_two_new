@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="标         题："
+            android:textColor="@color/text_grey_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_title"
+            android:background="@drawable/register_tv_bg"
+            android:singleLine="true"
+            android:textColor="@color/text_grey_color"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="25dp">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内         容："
+            android:textColor="@color/text_grey_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_content"
+            android:background="@drawable/et_content_bg"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textColor="@color/text_grey_color"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp">
+
+        <TextView
+            android:id="@+id/tv_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="联  系  人："
+            android:textColor="@color/text_grey_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_person"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_people"
+            android:background="@drawable/register_tv_bg"
+            android:singleLine="true"
+            android:textColor="@color/text_grey_color"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp">
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="手机号码："
+            android:textColor="@color/text_grey_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_phone"
+            android:background="@drawable/register_tv_bg"
+            android:singleLine="true"
+            android:maxLength="11"
+            android:inputType="number"
+            android:textColor="@color/text_grey_color"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp">
+
+        <TextView
+            android:id="@+id/tv_command"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="登录口令："
+            android:textColor="@color/text_grey_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_command"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_command"
+            android:background="@drawable/register_tv_bg"
+            android:singleLine="true"
+            android:textColor="@color/text_grey_color"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="45dp"
+        android:background="@color/red"
+        android:gravity="center"
+        android:text="一键报警"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

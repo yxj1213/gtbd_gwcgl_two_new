@@ -1,0 +1,456 @@
+<resources>
+
+    <string name="min">分钟前</string>
+    <string name="sec">秒前</string>
+    <string name="yesterday">昨天</string>
+    <string name="the_day_before_yesterday">前天</string>
+    <string name="today">今天</string>
+    <string name="date_format">M月d日 HH:mm</string>
+    <string name="year_format">yyyy年 M月d日 HH:mm</string>
+
+    <string name="gtbd_rules">
+        一、用户须知
+\n尊敬的用户，你即将开始使用的应用是由山西国泰北斗航天科技有限责任公司自主研发、拥有、运营的车辆管理及北斗位置服务类应用。
+\n山西国泰北斗航天科技有限责任公司（以下简称国泰北斗）提醒您（用户）在注册成为用户之前，请您认真仔细阅读本（用户服务协议)（以下简称本协议），以确保你充分理解本协议中所含各项条款。您的注册、登录、使用等行为将视为对本协议的接受，并同意接受本协议各条款的约束。
+\n本协议约定国泰北斗与用户之间关于北斗位置服务APP软件服务的权利义务。
+\n用户是指注册、使用、登录本服务的个人或单位授权的监管人员或有着营业执照的个体及单位。使用本应用时，会产生联网行为，包括数据业务方面联网、WLAN联网、WIFI连网、手机流量联网，流量费用请咨询当地运营商。
+\n本协议由国泰北斗根据实际情况在电脑（PC）端、手机（APP）端,发布公告后进行更新，更新后的协议条款即代替原来的协议条款，请恕不再另行通知。
+\n二、账号注册
+\n2.1、用户在使用本服务前，需要注册一个国泰北斗帐号，此帐号应当使用手机号码（微信、QQ）绑定注册，请用户使用没有与本系统相绑定的手机号码或者经过实名认证的手机号码。
+\n2.2、国泰北斗是基于实时地理位置、运行速度、行驶轨迹来监控调取所属车辆及人员的一款软件，用户应当确保所填写或提交信息的真实性。
+\n2.3、帐号注册成功后的名字及头像，严禁涉政、军、暴、黄、赌、毒等法律规定的所有通知通告，如有违反，系统将不予以通过，同时将追究所注册用户的法律责任。
+\n2.4、鉴于国泰北斗帐号的绑定注册过程中，将出现用户的个人信息，我们在此向用户承诺，绝不私自向外界透露用户个人隐私信息。
+\n三、个人隐私信息保护
+\n3.1、用户在注册帐号或使用本系统的过程中，可能需要填写或提交一些必要的信息，如法律法规所规定的身份信息、个人电话。如用户提交信息不完整、不准确、不真实或不符合法律规定，则用户有可能在使用本系统的过程中受到限制。
+\n3.2、个人隐私信息是指涉及用户个人身份或其它个人隐私的信息，比如，用户真实姓名、身份证号、手机号码、IP地址等。非个人隐私信息是指用户对本服务的操作状态以及使用习惯且客观反映在系统平台服务器端的基本信息及个人隐私信息范围外的其它信息。
+\n3.3、尊重用户个人隐私是国泰北斗的一贯准则，我们也将采取技术措施和手段，保护用户个人隐私信息的安全，防止向国泰北斗所提供的用户个人隐私信息泄露。
+\n3.4、国泰北斗未经用户同意不向任何第三方公开、透露用户个人隐私信息。但以下特定情形除外：
+\n（1）、根据法律法规的规定或行政单位、公安、司法机关的指示；
+\n（2）、由于用户将其帐号与密码与他人共享所导致的个人信息泄露；
+\n（3）、用户自行向第三方公开我方系统平台而涉及泄露个人隐私的；
+\n（4）、用户与国泰北斗用户合作单位就个人信息公开达成约定的；
+\n（5）、用户受到黑客攻击、钓鱼网站欺诈、电脑或手机病毒入侵的；
+\n（6）、其它不可抗力事件如天灾等导致用户个人信息泄露的；
+\n3.5、用户同意国泰北斗可在以下事项中使用用户的个人隐私信息：
+\n（1）、国泰北斗向用户及时发送重要通知，如软件更新或协议条款的变更；
+\n（2）、国泰北斗内部进行审计、数据分析和研究，以改进系统服务质量与用户沟通的；
+\n（3）、政府单位或密级单位招投标所涉及合同内容及非个人信息的；
+\n（4）、适用于法律法规规定的其它指示文件的；
+\n3.6、在您进入应用时，我们会调用您的位置信息；在您上传头像时，我们会访问您的相机；在您需要储存照片时，我们会访问您的SD卡；在您需要获取验证码的时候，我们会读取您的短信信息。与此同时，我们也会严格按照法律法规的要求进行信息的收集。
+\n3.7、用户个人关键信息的更改，详细致电国泰北斗安全客服。
+\n四、服务内容及规范
+\n4.1、用户使用本服务过程中所制作、上传、复制、传播的任何内容，包括但不限于帐号头像、名称、姓名、车牌号等注册信息及认证资料。
+\n4.2、用户不得利用国泰北斗帐号或本系统服务平台制作、上传、复制、传播法律法规和政策禁止的内容。
+\n4.3、国泰北斗将提供车辆位置、轨迹、速度、围栏、告警、统计等一系列功能模块。
+\n五、使用规则
+\n5.1、用户在本系统服务平台所传送、发布的内容并不反映或代表国泰北斗的观点、立场或政策，国泰北斗对此不承担任何责任。
+\n5.2、用户不得利用本系统服务平台发布涉军、政、暴、黄、赌、毒、宗教、民族等类信息。
+\n5.3、用户不得私自或伙同他人利用技术手段，意图干扰、破坏等影响国泰北斗的行业口杯，及其它违反法律规定，损害国泰北斗合法权益和行为。
+\n5.4、如因所监管人员离岗或离职所造成的损失，国泰北斗将不予承担。因此建议用户帐号密码做好安全备份，或开具证明后联系国泰北斗安全客服专员索要帐号及密码。
+\n六、知识产权声明
+\n本系统服务平台所涉及的内容（包括但不限于页面、文字、图片、图表、资料、号牌等）归国泰北斗所有，但用户在使用本服务前已与国泰北斗签订合同的除外。
+\n不可抗力的其它免责事由
+\n7.1、不可抗力是指不能预见、不能克服、不能避免且对一方或多方造成重大影响的客观事件，包括但不限于自然灾害如水灾、火灾、地震、暴风、运营商问题等以及社会事件如政府管控等行为。
+\n7.2、用户理解并确认，在使用本系统过程中，可能会遇到不可抗力等风险因素，使本服务发生中断，国泰北斗将全力进行修复，努力挽回损失，都在法律范围内的免责。
+\n7.3、同大多数互联网业务一样，受用户原因、网络质量、社会环境等影响，可能受到安全问题的侵扰，再如他人利用用户资料，植入病毒木马等威胁到用户计算机信息和数据的安全，从而影响本服务的正常使用。所以用户也需要加强密码及其他信息的保护。
+\n7.4、用户理解并确认，本服务存在因不可抗力、计算机被病毒或黑客攻击、系统不很定、用户所在区域被屏蔽，以及其它技术手段、互联网络、通信线路等原因千奇百怪的服务中断或不能满足用户要求的其它风险，因此导致的损失。
+\n7.5、用户理解并确认，国泰北斗需要定期不定期地对北斗位置系统服务平台或相关的设备及终端进行检修或维护，如因此类情况而造成服务在合理时间内的中断，国泰北斗无需为此承担责任，但我方会事先进行公告通知。
+\n7.6、用户理解并确认，对于国泰北斗向用户提供的免费服务、赠送产品，均不承担责任。
+\n八、其它
+\n8.1、国泰北斗郑重提醒用户注意协议中免除责任和其它法律条款，请用户仔细阅读。
+\n8.2、本协议的效力、解释、纠纷的解决，适用于中华人民共和国法律。若用户和国泰北斗之间发生纠纷争议，首先应协商解决。
+\n8.3、本协议的条款无论何种原因无效或不具备可执行性，其余条款仍然有效，对双方均具有约束力。
+\n8.4、国泰北斗拥有对上述条款的最终解释权。</string>
+
+
+    <string name="work_title">工作台</string>
+    <string name="home_title">首页</string>
+    <string name="me_title">我的</string>
+    <string name="work_item">订单审批</string>
+
+    <string name="needcar1_txt1">号牌类型：</string>
+    <string name="needcar1_txt3">座位数：</string>
+    <string name="needcar1_txt4">5-7座</string>
+    <string name="needcar2_txt">添加途经点 (0/15)</string>
+    <string name="needcar2_txt0">添加途经点</string>
+    <string name="needcar2_txt0_0">刷新</string>
+    <string name="needcar2_txt00">新增打卡</string>
+    <string name="needcar2_txt2">智能调序</string>
+    <string name="needcar2_txt1">常用路线</string>
+    <string name="needcar3_txt1">用车时间</string>
+    <string name="needcar3_txt2">现在用车</string>
+    <string name="needcar3_txt3">用车类型</string>
+    <string name="needcar3_txt4">执法用车</string>
+    <string name="needcar4_txt">司乘信息</string>
+    <string name="needcar4_txt1">用车人</string>
+    <string name="needcar4_txt2">本人用车</string>
+    <string name="needcar4_txt3">驾驶人</string>
+    <string name="needcar4_txt3_1">意向驾驶人</string>
+    <string name="needcar4_txt6">姓名</string>
+    <string name="needcar4_txt8">姓名及手机号</string>
+    <string name="needcar4_txt9">请输入姓名及手机号码</string>
+    <string name="needcar4_txt10">带队组长</string>
+
+    <string name="needcar4_txt14">号牌类型</string>
+
+
+    <string name="needcar4_txt10_1">带队组长(选填)</string>
+    <string name="needcar4_txt11">0人</string>
+    <string name="needcar4_txt12">陈丹 18029384459</string>
+    <string name="needcar4_txt13">随车人员</string>
+    <string name="needcar4_txt13_2">用车事由标题</string>
+    <string name="needcar4_txt13_3">用车事由内容</string>
+    <string name="needcar4_txt13_1">随车人数</string>
+    <string name="needcar4_txt13_11">人</string>
+    <string name="needcar4_txt13_1_1">随车人员(选填)</string>
+    <string name="needcar4_txt4">系统指派</string>
+    <string name="needcar4_txt5">更多信息</string>
+    <string name="needcar5_txt">用车事由(选填)</string>
+    <string name="needcar5_txt1">标题</string>
+    <string name="needcar5_txt2">请输入具体事由…</string>
+    <string name="needcar6_txt">预计</string>
+    <string name="needcar6_txt1">1328.79</string>
+    <string name="needcar6_txt3">元</string>
+    <string name="needcar7_txt2">计价规则</string>
+    <string name="needcar7_txt3">收起</string>
+
+    <string name="needcar3_time_txt">用车时间</string>
+    <string name="needcar3_time_txt2">预约用车</string>
+    <string name="needcar3_time_txt3">开始时间</string>
+    <string name="needcar3_time_txt4">结束时间</string>
+    <string name="needcar3_time_txt5">至</string>
+    <string name="needcar3_time_txt6">完成</string>
+    <string name="needcar3_time_txt7">取消</string>
+
+
+    <string name="needcar2_tjd_txt">起</string>
+    <string name="needcar2_tjd_txt0">终</string>
+    <string name="needcar2_tjd_txt1">晋城市机构编制委员会</string>
+    <string name="needcar2_tjd_txt3">请输入终点</string>
+
+    <string name="needcar3_yclx_txt">会议会议</string>
+    <string name="needcar3_yclx_txt2">设为默认</string>
+    <string name="needcar3_yclx_txt4">默认</string>
+
+    <string name="dialog_ts">提示</string>
+    <string name="dialog_ts3">继续提交</string>
+    <string name="dialog_ts2">去修改</string>
+    <string name="dialog_ts1">您的订单信息与平台信息不相符，如需修改请点“去修改”，继续提交则</string>
+    <string name="dialog_ts5">是否确认提交订单？</string>
+    <string name="dialog_ts5_1">是否确认取消订单？</string>
+    <string name="dialog_ts5_2">是否确定通过该订单？</string>
+    <string name="dialog_ts5_5">我要结束用车？</string>
+    <string name="dialog_ts5_6">您正在进行上车确认，请确定司机是否到达？</string>
+    <string name="dialog_ts5_7">您正在进行上车地确认，请确定您已到达上车地？</string>
+    <string name="dialog_ts5_8">请确保乘客已上车，并提醒乘客系好安全带？</string>
+    <string name="dialog_ts5_9">系统检测到您未到达预定上车地，是否继续此操作？</string>
+    <string name="dialog_ts5_10">系统检测到您未到达预定上车地，是否继续此操作?</string>
+    <string name="dialog_ts5_3">订单驳回</string>
+    <string name="dialog_ts5_4">调度驳回</string>
+    <string name="dialog_ts6">取消</string>
+    <string name="dialog_ts7">提交</string>
+    <string name="dialog_ts9">完成</string>
+    <string name="dialog_ts8">设置路线标题</string>
+    <string name="dialog_ts10">驳回原因</string>
+
+
+    <string name="needcar4_ryxx_txt1">姓名  丨</string>
+    <string name="needcar4_ryxx_txt2">电话 丨</string>
+
+    <string name="order_success">订单提交成功！</string>
+    <string name="order_success1">将此条路线添加为常用路线</string>
+    <string name="order_success2">返回首页</string>
+    <string name="order_success3">查看订单详情</string>
+    <string name="order_success4">广告占位</string>
+
+
+    <string name="me_zhuangtai">状态</string>
+    <string name="me_txt1">我的订单</string>
+    <string name="me_txt8">调度派车</string>
+    <string name="me_txt9">订单审批</string>
+    <string name="me_txt13">司机接单</string>
+    <string name="me_txt0">订单详情</string>
+    <string name="me_txt2">我的钱包</string>
+    <string name="me_txt3">车辆管理</string>
+    <string name="me_txt4">证件管理</string>
+    <string name="me_txt5">推荐邀请</string>
+    <string name="me_txt6">我的应用</string>
+    <string name="me_txt7">设置</string>
+
+
+    <string name="my_order_2">派车中</string>
+    <string name="my_order_3">订单号</string>
+    <string name="my_order_3_1">创建时间</string>
+    <string name="my_order_4">2022-02-10 12:50</string>
+    <string name="my_order_6">创建时间：&#160;</string>
+    <string name="my_order_7">用车时间：&#160;</string>
+    <string name="my_order_8">提交时间：&#160;</string>
+    <string name="ditu1">晋城市-某某县-某某街道</string>
+    <string name="ditu2">请输入地址批注</string>
+    <string name="ditu5">输入地址</string>
+    <string name="ditu3">联系电话</string>
+    <string name="ditu6">地图选址</string>
+    <string name="ditu7">地址簿</string>
+    <string name="ditu8">常用路线</string>
+    <string name="ditu9">添加常用路线</string>
+    <string name="ditu10">确认保存</string>
+
+
+    <string name="main_1">请输入员工编号</string>
+    <string name="main_1_1">员工编号</string>
+
+    <string name="main_left">全新创建企业</string>
+    <string name="main_left2">加入其他企业</string>
+    <string name="main_left3">选择以下类型全新创建</string>
+    <string name="main_left5">适用于公司、合伙企业等盈利性组织</string>
+    <string name="main_left7">政府</string>
+    <string name="main_left8">个人组建团队</string>
+    <string name="main_left9">补全信息，全新创建</string>
+    <string name="main_left10">企业名称</string>
+    <string name="main_left11">行业类型</string>
+    <string name="main_left12">员工规模</string>
+    <string name="main_left13">真实姓名</string>
+    <string name="main_left14">请选择</string>
+    <string name="main_left15">请输入真实姓名</string>
+    <string name="main_left18">请输入企业名称</string>
+    <string name="main_left19">请输入联系电话</string>
+    <string name="main_left19_1">联系电话</string>
+    <string name="main_left20">请输入电子邮箱</string>
+    <string name="main_left20_1">电子邮箱</string>
+    <string name="main_left16">创建</string>
+    <string name="main_left181">分组名称</string>
+    <string name="main_left18_1">请输入分组名称</string>
+    <string name="needcar_cph">请输入车牌号</string>
+
+
+
+    <string name="address_book_txt1">搜索地址或关键词</string>
+    <string name="address_book_txt2">所有地址</string>
+    <string name="address_book_txt3">管理</string>
+    <string name="address_book_txt4">添加地址</string>
+    <string name="address_book_txt6">添加路线</string>
+    <string name="address_book_txt5">默认起点</string>
+    <string name="address_book_txt7">路线标题</string>
+    <string name="address_book_txt8">输入标题</string>
+
+
+
+
+    <string name="order_details_txt1">0个途径点</string>
+    <string name="order_details_txt2">展开</string>
+    <string name="order_details_txt3">用车信息</string>
+    <string name="order_details_txt4">用车人</string>
+    <string name="order_details_txt5"></string>
+    <string name="order_details_txt6">车牌号</string>
+    <string name="order_details_txt6_0">意向车牌号</string>
+    <string name="order_details_txt6_1">车牌号(选填)</string>
+    <string name="order_details_txt8">车型</string>
+    <string name="order_details_txt8_1">意向车型</string>
+    <string name="order_details_txt10">0天0时0分</string>
+    <string name="order_details_txt11">用车时长</string>
+    <string name="order_details_txt12">0公里</string>
+    <string name="order_details_txt13">用车里程</string>
+    <string name="order_details_txt14">0元</string>
+    <string name="order_details_txt15">费用总计</string>
+    <string name="order_details_txt16">用车记录</string>
+    <string name="order_details_txt18">取消订单</string>
+    <string name="order_details_txt19">确认上车</string>
+
+    <string name="car_records_txt">已结束</string>
+    <string name="car_records_txt1">主管领导</string>
+    <string name="car_records_txt2">李黎</string>
+    <string name="car_records_txt3">驳回原因：审批意见在这里，参照审批意见在这
+里看，审批意见在这里。</string>
+
+
+    <string name="order_details_tjd1">打卡</string>
+    <string name="daka_txt">提交打卡</string>
+    <string name="daka_txt1">途经点名称</string>
+    <string name="daka_txt3">输入途径点名称</string>
+    <string name="daka_txt4">打卡类型</string>
+    <string name="daka_txt5">途经打卡</string>
+    <string name="daka_txt6">图片</string>
+    <string name="daka_txt7">备注说明（选填）</string>
+    <string name="daka_txt12">备注说明</string>
+    <string name="daka_txt8">标题</string>
+    <string name="daka_txt9">请输入具体事由…</string>
+    <string name="daka_txt2">山西省太原市小店区南中环山投大厦南门口</string>
+    <string name="me_txt10">打卡详情</string>
+    <string name="me_txt11">时间</string>
+    <string name="me_txt12">途经点批注</string>
+    <string name="driver_txt1">立即接单</string>
+
+
+    <string name="common_route_txt1">1号线-路线标题标题</string>
+    <string name="common_route_txt2">默认</string>
+
+
+    <string name="common_1">用车管理</string>
+    <string name="common_2">基础信息审核</string>
+    <string name="common_3">项待办工作</string>
+
+
+    <string name="dispatch_txt1">车辆及驾驶人</string>
+    <string name="dispatch_txt2">派车范围</string>
+    <string name="dispatch_txt8">派车类型</string>
+    <string name="dispatch_txt3">添加车辆及驾驶人</string>
+    <string name="dispatch_txt4">车辆</string>
+    <string name="dispatch_txt5">驾驶人</string>
+    <string name="dispatch_txt6">请选择驾驶人</string>
+    <string name="dispatch_txt7">请选择车辆</string>
+    <string name="dispatch_txt9">指派</string>
+    <string name="dispatch_txt10">本单位用车</string>
+
+
+
+    <string name="need_car_list_zwlx">暂无用车路线</string>
+    <string name="need_car_1">暂不填写用车线路</string>
+    <string name="need_car_1_1">员工信息审核</string>
+    <string name="need_car_1_2_1">证件信息</string>
+    <string name="need_car_0_1">财务结算</string>
+
+
+    <string name="need_car_0_2">请选择驾驶人</string>
+
+
+    <string name="main_left_company_select">新建分组</string>
+
+
+
+    /**
+        我的订单 = 1000
+        派车中 1000   未通过  1100  已取消  1200  出行中  1400  已完成  1500
+    */
+    <string name="type1">1000</string>
+    <string name="type1_1">1000</string>
+    <string name="type1_2">1400</string>
+    <string name="type1_3">1500</string>
+    <string name="type1_4">1100</string>
+    <string name="type1_5">1200</string>
+
+
+    /**
+        审核订单 = 2000   待审批 10    已通过 12   已驳回 90
+    */
+    <string name="type2">2000</string>
+    <string name="type2_1">10</string>
+    <string name="type2_2">12</string>
+    <string name="type2_3">90</string>
+
+    /**
+        调度订单 = 3000   待派车 20    已派车 22   已驳回 90
+    */
+    <string name="type3">3000</string>
+    <string name="type3_1">20</string>
+    <string name="type3_2">22</string>
+    <string name="type3_3">90</string>
+
+    /**
+      司机订单 = 4000  待接单 4000 待抢单 4300   出行中 4100   已完成 4200   已取消 4900
+    */
+    <string name="type4">4000</string>
+    <string name="type4_1">4000</string>
+    <string name="type4_2">4100</string>
+    <string name="type4_3">4200</string>
+    <string name="type4_4">4900</string>
+    <string name="type4_5">4300</string>
+
+
+
+    <string name="strings">&#160;|&#160;&#160;用车人&#160;</string>
+    <string name="stringsnull2">&#160;&#160;</string>
+    <!-- 字体 -->
+    <!-- 苹方-简 中黑体 -->
+    <string name="PingFang_SC_Medium">PingFang-SC-Medium</string>
+    <!-- 苹方-简 常规体 -->
+    <string name="PingFangSC_Regular">PingFangSC-Regular</string>
+    <!-- 苹方-简 中粗体 -->
+    <string name="PingFangSC_Semibold">PingFangSC-Semibold</string>
+    <!-- 金额字体 -->
+    <string name="DIN_Alternate_Bold">DINAlternate-Bold</string>
+
+
+    <string name="myperson_1">姓名</string>
+    <string name="myperson_5">入职时间</string>
+    <string name="myperson_7">身份证号</string>
+    <string name="myperson_9">联系电话</string>
+    <string name="myperson_10">紧急联系人</string>
+    <string name="myperson_11">紧急联系电话</string>
+    <string name="myperson_12">驾驶证有无</string>
+    <string name="myperson_14">现住址</string>
+
+    <string name="myperson_15_1">员工信息</string>
+    <string name="myperson_15_61">部门岗位</string>
+    <string name="myperson_15_7">企业名称</string>
+    <string name="myperson_15_2">部门</string>
+    <string name="myperson_15_6">企业名称</string>
+    <string name="myperson_15_3">请选择部门</string>
+    <string name="myperson_15_4">岗位</string>
+    <string name="myperson_15_5">请选择岗位</string>
+
+
+    <string name="myperson_sm">去支付宝认证</string>
+    <string name="myperson_sm2">实名认证</string>
+    <string name="myperson_sm_1">请输入身份证号</string>
+    <string name="myperson_sm_2">提交审核</string>
+    <string name="myperson_sm_3">取消</string>
+    <string name="my_outlogin">退出登录</string>
+
+    <string name="needcar_dialog_bg1">欢迎使用“我要用车”</string>
+    <string name="needcar_dialog_txt1">为了方便您使用此功能，需要您按提示完成以下操作</string>
+    <string name="needcar_dialog_txt1_1">完善员工信息</string>
+    <string name="needcar_dialog_txt1_2">个人资料将作为用车人信息使用</string>
+    <string name="needcar_dialog_txt1_3">创建企业/切换企业</string>
+    <string name="needcar_dialog_txt1_4">个人资料将作为用车人信息使用</string>
+    <string name="needcar_dialog_txt1_5">下次再说</string>
+    <string name="needcar_dialog_txt1_6">下一步</string>
+
+
+
+    <string name="select_txt1">开始时间</string>
+    <string name="select_txt2">结束时间</string>
+    <string name="select_txt3">请选择开始时间</string>
+    <string name="select_txt4">请选择结束时间</string>
+    <string name="select_txt5">请输入车牌号</string>
+    <string name="select_txt6">车牌号</string>
+    <string name="select_txt7">姓名/手机号</string>
+    <string name="select_txt8">请输入姓名/手机号</string>
+    <string name="select_txt9">订单号</string>
+    <string name="select_txt13">证件号</string>
+    <string name="select_txt14">请输入证件号</string>
+    <string name="select_txt10">请输入订单号</string>
+
+    <string name="select_txt11">重置</string>
+    <string name="select_txt12">确定</string>
+
+    <string name="order_mileage1">当前里程</string>
+    <string name="order_mileage2">输入当前里程</string>
+    <string name="order_mileage3">里程表图片</string>
+    <string name="order_mileage4">km</string>
+    <string name="order_mileage5">完成</string>
+
+
+    <string name="str_ip">IP地址</string>
+    <string name="str_ym">域名</string>
+    <string name="str_dk">端口</string>
+
+
+    <string name="login1">服务器</string>
+    <string name="login2">欢迎登录</string>
+    <string name="login3">公务用车管理平台，</string>
+    <string name="login3_1">立即注册</string>
+    <string name="login4">输入手机号</string>
+    <string name="login5">输入密码</string>
+    <string name="login6">输入验证码</string>
+    <string name="login7">记住我</string>
+    <string name="login8">忘记密码</string>
+    <string name="login9">登录</string>
+
+    <string name="login_dialog">说明：专网用户登录注册前，请先向服务商获取IP地址及端口</string>
+
+
+
+
+    <string name="go_auth">*为保证公务车管理软件个人注册信息与主体关联单位创建的基本信息一致准确完整，也作为软件业务操作流程数据交互，能在软件所发生业务关联的数据链融为一体，实名认证信息存储于公务车管理云端，并归属于关联单位信息审核验证使用，请放心使用操作。 若本人支付宝已实名，只需授权即可认证。</string>
+    <string name="splash_yzxy">尊敬的用户，欢迎使用公务车管理！与您分享我们的作品倍感荣幸，为了您的个人隐私安全，请您务必审慎阅读，充分理解“服务协议”和“隐私政策”各条款，在使用过程中，我们将向您申请以下权限：\n1、定位权限\n2、拍摄照片和打开相册权限。\n3、获取设备信息权限。\n同时我们需要您的设备信息、应用安装列表、日志信息等防止平台用户个人信息泄露。你可以在“设置”中查看、变更、删除个人信息并管理你的授权。\n你也可阅读《隐私政策》和《使用协议》了解详细信息。如你同意，请点击‘同意’开始接受我们的服务.</string>
+</resources>

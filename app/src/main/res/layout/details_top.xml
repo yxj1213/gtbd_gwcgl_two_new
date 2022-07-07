@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:id="@+id/lin_top"
+    android:orientation="vertical">
+
+<include layout="@layout/title_bar"
+    android:id="@+id/title"/>
+<com.baidu.mapapi.map.MapView
+    android:id="@+id/map"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_constraintTop_toBottomOf="@id/title"
+    android:layout_marginBottom="0dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

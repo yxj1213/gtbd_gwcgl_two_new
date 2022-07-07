@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ttce.vehiclemanage.widget.MyLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/control_panel_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/fenceDviceIdTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设备ID"
+                android:textColor="@color/wheel_item_text_color_no_select"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/editFenceNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:background="@drawable/whitebg_grayborder30_round_tv_bg"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="编辑名称"
+                android:textColor="@color/blue_color1"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_10"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/addDevice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/whitebg_grayborder30_round_tv_bg"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="添加设备"
+                android:textColor="#56dff3"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="进出告警设置"
+                android:textColor="@color/wheel_item_text_color_no_select"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:id="@+id/cb_jin"
+                style="@style/CustomCheckBox"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:padding="5dp"
+                android:text="进"
+                android:textColor="@color/common_black" />
+
+            <CheckBox
+                android:id="@+id/cb_chu"
+                style="@style/CustomCheckBox"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="30dp"
+                android:padding="5dp"
+                android:text="出"
+                android:textColor="@color/common_black" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/transparent" />
+
+            <TextView
+                android:id="@+id/tv_car_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/whitebg_grayborder30_round_tv_bg"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="车辆信息"
+                android:textColor="#56dff3"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_20">
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue30_round_tv_bg"
+                android:paddingLeft="100dp"
+                android:paddingTop="5dp"
+                android:paddingRight="100dp"
+                android:paddingBottom="5dp"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.ttce.vehiclemanage.widget.MyLayout>

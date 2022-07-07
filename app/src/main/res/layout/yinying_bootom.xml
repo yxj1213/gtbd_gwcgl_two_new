@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ttce.vehiclemanage.widget.linearlayout.ShadowLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tv_bottom"
+    app:shadowRadius="@dimen/dp_22"
+    app:shadowColor="@color/a6166_color"
+    android:layout_alignParentBottom="true"
+    app:xOffset="@dimen/dp_0"
+    app:yOffset="@dimen/dp_2"
+    app:blurRadius="@dimen/dp_6"
+    app:bgColor="@color/app_main_colors"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_24"
+    android:layout_marginRight="@dimen/dp_25">
+    <TextView
+        android:id="@+id/tv_sub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/dp_11"
+        android:paddingBottom="@dimen/dp_11"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        android:text="@string/main_left16"
+        android:fontFamily="@string/PingFang_SC_Medium"
+        android:textStyle="bold"
+        />
+</com.ttce.vehiclemanage.widget.linearlayout.ShadowLayout>

@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_18"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:id="@+id/fra_top"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_work_one" />
+        <View
+            android:id="@+id/view_circle"
+            android:layout_width="@dimen/dp_8"
+            android:visibility="gone"
+            android:layout_height="@dimen/dp_8"
+            android:background="@drawable/circle_red"
+            android:layout_gravity="right"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fra_top"
+        android:layout_centerInParent="true"
+        android:text="@string/work_item"
+        android:textSize="@dimen/sp_14"
+        android:fontFamily="@string/PingFangSC_Regular"
+        android:layout_marginTop="@dimen/dp_6"
+        android:textColor="@color/work_item_txt_color" />
+</RelativeLayout>
+
+</FrameLayout>

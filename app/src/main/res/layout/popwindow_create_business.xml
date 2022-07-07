@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ttce.vehiclemanage.widget.linearlayout.ShadowLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/add_fenzu"
+        app:shadowRadius="@dimen/dp_8"
+        app:shadowColor="@color/main_50"
+        app:bgColor="@color/d9f"
+        app:xOffset="@dimen/dp_0"
+        app:yOffset="@dimen/dp_2"
+        app:blurRadius="@dimen/dp_6"
+        android:layout_marginRight="@dimen/dp_8"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_width="136dp"
+        android:layout_height="46dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_left_company_select"
+            android:textColor="@color/d6e1"
+            android:textSize="@dimen/sp_16"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/dp_17"
+            android:drawablePadding="@dimen/dp_7"
+            android:drawableLeft="@mipmap/icon_depart_manage"
+            />
+    </com.ttce.vehiclemanage.widget.linearlayout.ShadowLayout>

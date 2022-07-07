@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLL"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/whitebg_grayborder30_round_tv_bg"
+    android:gravity="center"
+    android:layout_marginRight="@dimen/dp_10"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/itemTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingBottom="@dimen/dp_4"
+        android:text="机油"
+        android:textColor="@color/blue_color1"/>
+
+</LinearLayout>

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/title_bar" />
+
+            <com.ttce.vehiclemanage.widget.MyLayout
+                android:id="@+id/my_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/control_panel_bg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_10">
+                    <include layout="@layout/dialog_calendar"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dp_10">
+
+                        <TextView
+                            android:id="@+id/tv_last_day"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:text="昨天"
+                            android:textColor="@color/wheel_item_text_color_no_select"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_last_weeek"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:text="上周"
+                            android:textColor="@color/wheel_item_text_color_no_select"
+                            android:textSize="14sp" />
+                        <TextView
+                            android:id="@+id/tv_last_month"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:text="上月"
+                            android:textColor="@color/wheel_item_text_color_no_select"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_Last_3_days"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:text="最近三天"
+                            android:textColor="@color/wheel_item_text_color_no_select"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dp_10">
+                        <TextView
+                            android:id="@+id/tv_today"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:text="今天"
+                            android:textColor="@color/wheel_item_text_color_no_select"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:id="@+id/tv_this_weeek"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:text="本周"
+                            android:textColor="@color/wheel_item_text_color_no_select"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_this_month"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:text="本月"
+                            android:textColor="@color/wheel_item_text_color_no_select"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_Last_7_days"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:text="最近七天"
+                            android:textColor="@color/wheel_item_text_color_no_select"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                    <View
+                        style="@style/view_top_bottom10"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/dp_6"
+                        android:paddingLeft="@dimen/dp_6"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/select_txt1"
+                            android:paddingTop="@dimen/dp_12"
+                            android:paddingBottom="@dimen/dp_10"
+                            android:textColor="@color/needcar_txt_color4"
+                            android:textSize="@dimen/sp_14" />
+
+                        <TextView
+                            android:id="@+id/tv_start_time"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textColor="@color/needcar_txt_color2"
+                            android:hint="@string/select_txt3"
+                            android:textColorHint="@color/needcar_txt_color1"
+                            android:textSize="@dimen/sp_14" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dp_7"
+                            android:src="@mipmap/icon_right_gray"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                    <View
+                        style="@style/view_top_bottom10"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/dp_6"
+                        android:paddingLeft="@dimen/dp_6"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/select_txt2"
+                            android:paddingTop="@dimen/dp_12"
+                            android:paddingBottom="@dimen/dp_10"
+                            android:textColor="@color/needcar_txt_color4"
+                            android:textSize="@dimen/sp_14" />
+
+                        <TextView
+                            android:id="@+id/tv_end_time"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textColor="@color/needcar_txt_color2"
+                            android:hint="@string/select_txt4"
+                            android:textColorHint="@color/needcar_txt_color1"
+                            android:textSize="@dimen/sp_14" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dp_7"
+                            android:src="@mipmap/icon_right_gray"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                    <View
+                        style="@style/view_top_bottom10"/>
+
+                    <LinearLayout
+                        android:id="@+id/lin_carnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/dp_6"
+                        android:paddingLeft="@dimen/dp_6"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/select_txt6"
+                            android:paddingTop="@dimen/dp_12"
+                            android:paddingBottom="@dimen/dp_10"
+                            android:textColor="@color/needcar_txt_color4"
+                            android:textSize="@dimen/sp_14" />
+
+                        <EditText
+                            android:id="@+id/edt_cph"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:background="@null"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textColor="@color/needcar_txt_color2"
+                            android:hint="@string/select_txt5"
+                            android:paddingRight="@dimen/dp_7"
+                            android:textColorHint="@color/needcar_txt_color1"
+                            android:textSize="@dimen/sp_14" />
+
+                    </LinearLayout>
+
+                    <View
+                        style="@style/view_top_bottom10"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/dp_6"
+                        android:paddingLeft="@dimen/dp_6"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/select_txt7"
+                            android:paddingTop="@dimen/dp_12"
+                            android:paddingBottom="@dimen/dp_10"
+                            android:textColor="@color/needcar_txt_color4"
+                            android:textSize="@dimen/sp_14" />
+
+                        <EditText
+                            android:id="@+id/edt_xm_or_phone"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:background="@null"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textColor="@color/needcar_txt_color2"
+                            android:hint="@string/select_txt8"
+                            android:paddingRight="@dimen/dp_7"
+                            android:textColorHint="@color/needcar_txt_color1"
+                            android:textSize="@dimen/sp_14" />
+
+                    </LinearLayout>
+                    <View
+                        style="@style/view_top_bottom10"/>
+                    <LinearLayout
+                        android:id="@+id/lin_ddh"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/dp_6"
+                        android:paddingLeft="@dimen/dp_6"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/select_txt9"
+                            android:paddingTop="@dimen/dp_12"
+                            android:paddingBottom="@dimen/dp_10"
+                            android:textColor="@color/needcar_txt_color4"
+                            android:textSize="@dimen/sp_14" />
+
+                        <EditText
+                            android:id="@+id/edt_ddh"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:background="@null"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textColor="@color/needcar_txt_color2"
+                            android:hint="@string/select_txt10"
+                            android:paddingRight="@dimen/dp_7"
+                            android:textColorHint="@color/needcar_txt_color1"
+                            android:textSize="@dimen/sp_14" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lin_idNumber"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/dp_6"
+                        android:paddingLeft="@dimen/dp_6"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/select_txt13"
+                            android:paddingTop="@dimen/dp_12"
+                            android:paddingBottom="@dimen/dp_10"
+                            android:textColor="@color/needcar_txt_color4"
+                            android:textSize="@dimen/sp_14" />
+
+                        <EditText
+                            android:id="@+id/edt_idnumber"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:background="@null"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textColor="@color/needcar_txt_color2"
+                            android:hint="@string/select_txt14"
+                            android:paddingRight="@dimen/dp_7"
+                            android:textColorHint="@color/needcar_txt_color1"
+                            android:textSize="@dimen/sp_14" />
+
+                    </LinearLayout>
+                    <View
+                        style="@style/view_top_bottom10"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp_30"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="64dp"
+                            android:layout_marginRight="64dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tv_cancel"
+                                android:text="@string/select_txt11"
+                                android:textStyle="bold"
+                                style="@style/btn_border_blue_20"
+                                android:layout_width="0dp"
+                                android:layout_marginRight="@dimen/dp_8"
+                                android:layout_weight="1"/>
+                            <TextView
+                                android:id="@+id/tv_confirm"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/select_txt12"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="@dimen/dp_8"
+                                style="@style/btn_blue_22"/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </com.ttce.vehiclemanage.widget.MyLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

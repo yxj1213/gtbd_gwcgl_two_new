@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/ip_first"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@null"
+        android:inputType="numberDecimal"
+        android:text=""
+        android:maxLength="4"
+        android:textSize="14sp"
+        android:textColor="@color/work_item_txt_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/work_item_txt_color"
+        android:text="."/>
+
+    <EditText
+        android:id="@+id/ip_second"
+        android:layout_width="0dp"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@null"
+        android:inputType="numberDecimal"
+        android:text=""
+        android:textSize="14sp"
+        android:maxLength="4"
+        android:textColor="@color/work_item_txt_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:textSize="14sp"
+        android:textColor="@color/work_item_txt_color"/>
+
+    <EditText
+        android:id="@+id/ip_third"
+        android:layout_width="0dp"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@null"
+        android:inputType="numberDecimal"
+        android:text=""
+        android:textSize="14sp"
+        android:maxLength="4"
+        android:textColor="@color/work_item_txt_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:textSize="14sp"
+        android:textColor="@color/work_item_txt_color"/>
+
+    <EditText
+        android:id="@+id/ip_fourth"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:background="@null"
+        android:inputType="numberDecimal"
+        android:text=""
+        android:textSize="14sp"
+        android:maxLength="4"
+        android:textColor="@color/work_item_txt_color"/>
+
+</LinearLayout>

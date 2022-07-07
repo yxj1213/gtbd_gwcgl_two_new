@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/rel_bg"
+    android:background="@drawable/business_sel_bg"
+    android:layout_marginTop="@dimen/dp_9"
+    android:layout_marginBottom="@dimen/dp_9"
+    android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/img_left"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:background="@drawable/white_6_bg"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_22"
+            android:src="@mipmap/icon_business_sel"
+            android:scaleType="center"
+            android:layout_marginBottom="@dimen/dp_18"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_left"
+            android:layout_toLeftOf="@+id/id_select"
+            android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_business"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/aa_color"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    android:layout_toLeftOf="@+id/id_select"
+                    android:layout_marginRight="@dimen/dp_31"
+                    android:singleLine="true"
+                    android:fontFamily="@string/PingFang_SC_Medium"
+                    />
+                        <TextView
+                            android:id="@+id/tv_select"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="当前账号"
+                            android:textColor="@color/bc4"
+                            android:paddingLeft="@dimen/dp_6"
+                            android:paddingRight="@dimen/dp_6"
+                            android:background="@drawable/border_white_bg_8"
+                            android:textSize="@dimen/sp_11"
+                            android:layout_marginTop="@dimen/dp_4"
+                            android:fontFamily="@string/PingFangSC_Regular"
+                            />
+        </LinearLayout>
+
+        <RadioButton
+            android:id="@+id/id_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_18"
+            android:gravity="right"
+            android:button="@null" />
+</RelativeLayout>

@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="告警接收"
+                    android:textColor="@color/common_black"
+                    android:textSize="15sp" />
+
+                <com.ttce.vehiclemanage.widget.NewSwitchButton
+                    android:id="@+id/sb_gjjs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/selector_back_drawable_switchbutton"
+                    app:kswBackMeasureRatio="1.4"
+                    app:kswThumbDrawable="@drawable/selector_ios_thumb_switchbutton"
+                    app:kswThumbMarginBottom="-8dp"
+                    app:kswThumbMarginLeft="-5dp"
+                    app:kswThumbMarginRight="-5dp"
+                    app:kswThumbMarginTop="-2.5dp" />
+            </RelativeLayout>
+
+            <View style="@style/cuteline" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="震动报警"
+                    android:textColor="@color/common_black"
+                    android:textSize="15sp" />
+
+                <com.ttce.vehiclemanage.widget.NewSwitchButton
+                    android:id="@+id/sb_zdbj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/selector_back_drawable_switchbutton"
+                    app:kswBackMeasureRatio="1.4"
+                    app:kswThumbDrawable="@drawable/selector_ios_thumb_switchbutton"
+                    app:kswThumbMarginBottom="-8dp"
+                    app:kswThumbMarginLeft="-5dp"
+                    app:kswThumbMarginRight="-5dp"
+                    app:kswThumbMarginTop="-2.5dp" />
+            </RelativeLayout>
+
+            <View style="@style/cuteline" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="离线告警"
+                    android:textColor="@color/common_black"
+                    android:textSize="15sp" />
+
+                <com.ttce.vehiclemanage.widget.NewSwitchButton
+                    android:id="@+id/sb_lxgj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/selector_back_drawable_switchbutton"
+                    app:kswBackMeasureRatio="1.4"
+                    app:kswThumbDrawable="@drawable/selector_ios_thumb_switchbutton"
+                    app:kswThumbMarginBottom="-8dp"
+                    app:kswThumbMarginLeft="-5dp"
+                    app:kswThumbMarginRight="-5dp"
+                    app:kswThumbMarginTop="-2.5dp" />
+            </RelativeLayout>
+
+            <View style="@style/cuteline" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="出卫星盲区报警"
+                    android:textColor="@color/common_black"
+                    android:textSize="15sp" />
+
+                <com.ttce.vehiclemanage.widget.NewSwitchButton
+                    android:id="@+id/sb_cwxmqbj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/selector_back_drawable_switchbutton"
+                    app:kswBackMeasureRatio="1.4"
+                    app:kswThumbDrawable="@drawable/selector_ios_thumb_switchbutton"
+                    app:kswThumbMarginBottom="-8dp"
+                    app:kswThumbMarginLeft="-5dp"
+                    app:kswThumbMarginRight="-5dp"
+                    app:kswThumbMarginTop="-2.5dp" />
+            </RelativeLayout>
+
+            <View style="@style/cuteline" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="内部电池低电报警"
+                    android:textColor="@color/common_black"
+                    android:textSize="15sp" />
+
+                <com.ttce.vehiclemanage.widget.NewSwitchButton
+                    android:id="@+id/sb_nbdcddbj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/selector_back_drawable_switchbutton"
+                    app:kswBackMeasureRatio="1.4"
+                    app:kswThumbDrawable="@drawable/selector_ios_thumb_switchbutton"
+                    app:kswThumbMarginBottom="-8dp"
+                    app:kswThumbMarginLeft="-5dp"
+                    app:kswThumbMarginRight="-5dp"
+                    app:kswThumbMarginTop="-2.5dp" />
+            </RelativeLayout>
+
+            <View style="@style/cuteline" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="断电报警"
+                    android:textColor="@color/common_black"
+                    android:textSize="15sp" />
+
+                <com.ttce.vehiclemanage.widget.NewSwitchButton
+                    android:id="@+id/sb_ddbj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/selector_back_drawable_switchbutton"
+                    app:kswBackMeasureRatio="1.4"
+                    app:kswThumbDrawable="@drawable/selector_ios_thumb_switchbutton"
+                    app:kswThumbMarginBottom="-8dp"
+                    app:kswThumbMarginLeft="-5dp"
+                    app:kswThumbMarginRight="-5dp"
+                    app:kswThumbMarginTop="-2.5dp" />
+            </RelativeLayout>
+
+            <View style="@style/cuteline" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="进卫星盲区报警"
+                    android:textColor="@color/common_black"
+                    android:textSize="15sp" />
+
+                <com.ttce.vehiclemanage.widget.NewSwitchButton
+                    android:id="@+id/sb_jwxmqbj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/selector_back_drawable_switchbutton"
+                    app:kswBackMeasureRatio="1.4"
+                    app:kswThumbDrawable="@drawable/selector_ios_thumb_switchbutton"
+                    app:kswThumbMarginBottom="-8dp"
+                    app:kswThumbMarginLeft="-5dp"
+                    app:kswThumbMarginRight="-5dp"
+                    app:kswThumbMarginTop="-2.5dp" />
+            </RelativeLayout>
+
+            <View style="@style/cuteline" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="低电告警"
+                    android:textColor="@color/common_black"
+                    android:textSize="15sp" />
+
+                <com.ttce.vehiclemanage.widget.NewSwitchButton
+                    android:id="@+id/sb_ddgj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/selector_back_drawable_switchbutton"
+                    app:kswBackMeasureRatio="1.4"
+                    app:kswThumbDrawable="@drawable/selector_ios_thumb_switchbutton"
+                    app:kswThumbMarginBottom="-8dp"
+                    app:kswThumbMarginLeft="-5dp"
+                    app:kswThumbMarginRight="-5dp"
+                    app:kswThumbMarginTop="-2.5dp" />
+            </RelativeLayout>
+
+            <View style="@style/cuteline" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="疲劳报警"
+                    android:textColor="@color/common_black"
+                    android:textSize="15sp" />
+
+                <com.ttce.vehiclemanage.widget.NewSwitchButton
+                    android:id="@+id/sb_plbj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/selector_back_drawable_switchbutton"
+                    app:kswBackMeasureRatio="1.4"
+                    app:kswThumbDrawable="@drawable/selector_ios_thumb_switchbutton"
+                    app:kswThumbMarginBottom="-8dp"
+                    app:kswThumbMarginLeft="-5dp"
+                    app:kswThumbMarginRight="-5dp"
+                    app:kswThumbMarginTop="-2.5dp" />
+            </RelativeLayout>
+
+            <View style="@style/cuteline" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="ACC设防"
+                    android:textColor="@color/common_black"
+                    android:textSize="15sp" />
+
+                <com.ttce.vehiclemanage.widget.NewSwitchButton
+                    android:id="@+id/sb_accsf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/selector_back_drawable_switchbutton"
+                    app:kswBackMeasureRatio="1.4"
+                    app:kswThumbDrawable="@drawable/selector_ios_thumb_switchbutton"
+                    app:kswThumbMarginBottom="-8dp"
+                    app:kswThumbMarginLeft="-5dp"
+                    app:kswThumbMarginRight="-5dp"
+                    app:kswThumbMarginTop="-2.5dp" />
+            </RelativeLayout>
+
+            <View style="@style/cuteline" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="SOS报警"
+                    android:textColor="@color/common_black"
+                    android:textSize="15sp" />
+
+                <com.ttce.vehiclemanage.widget.NewSwitchButton
+                    android:id="@+id/sb_sosbj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/selector_back_drawable_switchbutton"
+                    app:kswBackMeasureRatio="1.4"
+                    app:kswThumbDrawable="@drawable/selector_ios_thumb_switchbutton"
+                    app:kswThumbMarginBottom="-8dp"
+                    app:kswThumbMarginLeft="-5dp"
+                    app:kswThumbMarginRight="-5dp"
+                    app:kswThumbMarginTop="-2.5dp" />
+            </RelativeLayout>
+
+            <View style="@style/cuteline" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="超速报警"
+                    android:textColor="@color/common_black"
+                    android:textSize="15sp" />
+
+                <com.ttce.vehiclemanage.widget.NewSwitchButton
+                    android:id="@+id/sb_csbj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/selector_back_drawable_switchbutton"
+                    app:kswBackMeasureRatio="1.4"
+                    app:kswThumbDrawable="@drawable/selector_ios_thumb_switchbutton"
+                    app:kswThumbMarginBottom="-8dp"
+                    app:kswThumbMarginLeft="-5dp"
+                    app:kswThumbMarginRight="-5dp"
+                    app:kswThumbMarginTop="-2.5dp" />
+            </RelativeLayout>
+
+            <View style="@style/cuteline" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="驶入围栏告警"
+                    android:textColor="@color/common_black"
+                    android:textSize="15sp" />
+
+                <com.ttce.vehiclemanage.widget.NewSwitchButton
+                    android:id="@+id/sb_srwlgj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/selector_back_drawable_switchbutton"
+                    app:kswBackMeasureRatio="1.4"
+                    app:kswThumbDrawable="@drawable/selector_ios_thumb_switchbutton"
+                    app:kswThumbMarginBottom="-8dp"
+                    app:kswThumbMarginLeft="-5dp"
+                    app:kswThumbMarginRight="-5dp"
+                    app:kswThumbMarginTop="-2.5dp" />
+            </RelativeLayout>
+
+            <View style="@style/cuteline" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="驶出围栏告警"
+                    android:textColor="@color/common_black"
+                    android:textSize="15sp" />
+
+                <com.ttce.vehiclemanage.widget.NewSwitchButton
+                    android:id="@+id/sb_scwlgj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/selector_back_drawable_switchbutton"
+                    app:kswBackMeasureRatio="1.4"
+                    app:kswThumbDrawable="@drawable/selector_ios_thumb_switchbutton"
+                    app:kswThumbMarginBottom="-8dp"
+                    app:kswThumbMarginLeft="-5dp"
+                    app:kswThumbMarginRight="-5dp"
+                    app:kswThumbMarginTop="-2.5dp" />
+            </RelativeLayout>
+
+            <View style="@style/cuteline" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

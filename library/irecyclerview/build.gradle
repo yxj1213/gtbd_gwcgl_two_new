@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "30.0.2"
+//    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 3
+        versionName "0.0.3"
+    }
+    buildTypes {
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':library:common')
+    implementation 'com.google.android:flexbox:1.0.0'
+}

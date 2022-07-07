@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rel"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/needcar_txt_color4"
+                android:textSize="10sp"/>
+
+            <ImageView
+                android:id="@+id/id_treenode_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@mipmap/arraw_smal_right" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/id_treenode_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@mipmap/company_level_1" />
+
+        <TextView
+            android:id="@+id/id_treenode_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@id/ll_number"
+            android:layout_toRightOf="@id/id_treenode_img"
+            android:textColor="@color/needcar_txt_color4"
+            android:textSize="10sp"/>
+
+        <CheckBox
+            android:id="@+id/cb"
+            style="@style/CustomCheckBox"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/common_black"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#aaa"
+        android:layout_below="@+id/rel_all"
+        />
+</RelativeLayout>
