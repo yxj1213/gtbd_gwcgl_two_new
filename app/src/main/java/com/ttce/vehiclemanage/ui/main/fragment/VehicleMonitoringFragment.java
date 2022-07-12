@@ -476,6 +476,13 @@ public class VehicleMonitoringFragment extends BaseFragment<VehicleMonitoringPre
                 data.clear();
                 mLinkedList.clear();
                 companyBeanList.clear();
+
+
+                id_tree.setAdapter(null);
+
+
+
+
                 tv_all.setText("全部车辆(0)");
                 tv_online.setText("在线车辆(0)");
                 tv_outline.setText("离线车辆(0)");
@@ -713,8 +720,8 @@ public class VehicleMonitoringFragment extends BaseFragment<VehicleMonitoringPre
                 // TODO: 2019/9/20 nothing
                 break;
             case R.id.iv_car:
-                isFillData = false;
-                filterCompanyData();
+//                isFillData = false;
+//                filterCompanyData();
                 if(bottomControlPanel!=null){
                     bottomControlPanel.dissmiss();
                 }
@@ -904,13 +911,17 @@ public class VehicleMonitoringFragment extends BaseFragment<VehicleMonitoringPre
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1 && data != null) {
             MonitorResponseBean bean = (MonitorResponseBean) data.getSerializableExtra("bean");
-            for (Overlay overlay : markerList) {
-                Marker marker = (Marker) overlay;
-                MonitorResponseBean monitorResponseBean = (MonitorResponseBean) marker.getExtraInfo().getSerializable("bean");
-                if (bean.getCarNumber().equals(monitorResponseBean.getCarNumber())) {
-                    onMarkerClick(marker);
-                    break;
+            if(markerList!=null){
+                for (Overlay overlay : markerList) {
+                    Marker marker = (Marker) overlay;
+                    MonitorResponseBean monitorResponseBean = (MonitorResponseBean) marker.getExtraInfo().getSerializable("bean");
+                    if (bean.getCarNumber().equals(monitorResponseBean.getCarNumber())) {
+                        onMarkerClick(marker);
+                        break;
+                    }
                 }
+            }else {
+                ToastUitl.showLong("当前车辆不存在，请刷新界面后重新操作。");
             }
         }else  if (requestCode == 1315){
             requestPermission();

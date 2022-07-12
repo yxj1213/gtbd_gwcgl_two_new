@@ -244,8 +244,8 @@ public class NodeTreeAdapter extends BaseAdapter {
             if(type!=-1){
                 //解决item隐藏占位问题，隐藏item设置其高度为0
                 convertView.setVisibility(View.VISIBLE);
-//                AbsListView.LayoutParams param = new AbsListView.LayoutParams(AbsListView.LayoutParams.MATCH_PARENT, AbsListView.LayoutParams.WRAP_CONTENT); //设置item的weidth和height都为0
-//                convertView.setLayoutParams(param);
+                AbsListView.LayoutParams param = new AbsListView.LayoutParams(AbsListView.LayoutParams.MATCH_PARENT, AbsListView.LayoutParams.WRAP_CONTENT); //设置item的weidth和height都为0
+                convertView.setLayoutParams(param);
             }
             if(selectMode){
                 CompanyItemBean selectedItem=node.getCompanyItemBean();
